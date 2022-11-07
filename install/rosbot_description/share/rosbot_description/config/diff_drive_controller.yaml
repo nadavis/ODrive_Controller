@@ -1,0 +1,90 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100 # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+diff_drive_controller:
+  ros__parameters:
+    left_wheel_names: ["left_wheel_joint"]
+    right_wheel_names: ["right_wheel_joint"]
+    # write_op_modes: ["motor_controller"]
+
+    # TODO: set correct robot parameters
+    wheel_separation: 0.241
+    #wheels_per_side: 1  # actually 2, but both are controlled by 1 signal
+    wheel_radius: 0.0975
+
+    wheel_separation_multiplier: 1.0
+    # left_wheel_radius_multiplier: 1.0
+    # right_wheel_radius_multiplier: 1.0
+    # wheels have gearbox ratio of 4.5 (inverse 0.222222222)
+    left_wheel_radius_multiplier: 0.222222222
+    right_wheel_radius_multiplier: 0.222222222
+
+    publish_rate: 50.0
+    odom_frame_id: odom
+    base_frame_id: base_link
+
+    # error model
+    # values provided in the example, not sure how to calculate
+    # https://manialabs.wordpress.com/2012/08/06/covariance-matrices-with-a-practical-example/
+    # pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+    # twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+    # pose_covariance_diagonal: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    # twist_covariance_diagonal: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    pose_covariance_diagonal:
+      [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
+    twist_covariance_diagonal:
+      [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
+
+    # open_loop: true
+    open_loop: false
+    enable_odom_tf: true
+
+    cmd_vel_timeout: 0.5
+
+    # publish_limited_velocity: true
+
+    # unstamped velocity uses /diff_drive_controller/cmd_vel_unstamped
+    use_stamped_vel: false
+
+    # stamped velocity uses /diff_drive_controller/cmd_vel
+    # use_stamped_vel: true
+
+    velocity_rolling_window_size: 10
+
+    # preserve turning radius when limiting speed/acceleration/jerk
+    preserve_turning_radius: true
+
+    # publish limited velocity
+    publish_cmd: true
+
+    # publish wheel data
+    publish_wheel_data: true
+
+    # velocity and acceleration limits
+    # whenever a min_* is unspecified, default to -max_*
+    linear.x.has_velocity_limits: true
+    linear.x.has_acceleration_limits: true
+    linear.x.has_jerk_limits: false
+    linear.x.max_velocity: 2.0
+    linear.x.min_velocity: -2.0
+    linear.x.min_acceleration: -3.0
+    linear.x.max_acceleration: 3.0
+    linear.x.max_jerk: 0.0
+    linear.x.min_jerk: 0.0
+
+    angular.z.has_velocity_limits: true
+    angular.z.has_acceleration_limits: true
+    angular.z.has_jerk_limits: false
+    angular.z.max_velocity: 6.28
+    angular.z.min_velocity: -6.28
+    angular.z.max_acceleration: 25.0
+    angular.z.min_acceleration: -25.0
+    angular.z.max_jerk: 0.0
+    angular.z.min_jerk: 0.0

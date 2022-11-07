@@ -1,0 +1,38 @@
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.2 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nadav/ODrive_Controller/build/odrive_demo_description
+-- Install configuration: ""
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/urdf
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_rrbot.urdf.xacro
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_diffbot.urdf.xacro
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.urdf.xacro
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.ros2_control.xacro
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/ament_index/resource_index/package_run_dependencies/odrive_demo_description
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/ament_index/resource_index/parent_prefix_path/odrive_demo_description
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.sh
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.dsv
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/environment/path.sh
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/environment/path.dsv
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/local_setup.bash
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/local_setup.sh
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/local_setup.zsh
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/local_setup.dsv
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.dsv
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/ament_index/resource_index/packages/odrive_demo_description
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig.cmake
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig-version.cmake
+-- Installing: /home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.xml

@@ -1,0 +1,9 @@
+/home/nadav/ODrive_Controller/build/odrive_demo_bringup/CMakeFiles/uninstall.dir
+/home/nadav/ODrive_Controller/build/odrive_demo_bringup/CMakeFiles/odrive_demo_bringup_uninstall.dir
+/home/nadav/ODrive_Controller/build/odrive_demo_bringup/CMakeFiles/test.dir
+/home/nadav/ODrive_Controller/build/odrive_demo_bringup/CMakeFiles/edit_cache.dir
+/home/nadav/ODrive_Controller/build/odrive_demo_bringup/CMakeFiles/rebuild_cache.dir
+/home/nadav/ODrive_Controller/build/odrive_demo_bringup/CMakeFiles/list_install_components.dir
+/home/nadav/ODrive_Controller/build/odrive_demo_bringup/CMakeFiles/install.dir
+/home/nadav/ODrive_Controller/build/odrive_demo_bringup/CMakeFiles/install/local.dir
+/home/nadav/ODrive_Controller/build/odrive_demo_bringup/CMakeFiles/install/strip.dir

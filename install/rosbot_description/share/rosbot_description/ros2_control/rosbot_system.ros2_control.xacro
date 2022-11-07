@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="rosbot_system" params="name prefix use_fake_hardware:=^|false fake_sensor_commands:=^|false slowdown:=2.0">
+
+    <ros2_control name="${name}" type="system">
+      <hardware>
+        <xacro:if value="${use_fake_hardware}">
+          <plugin>fake_components/GenericSystem</plugin>
+          <param name="fake_sensor_commands">${fake_sensor_commands}</param>
+          <param name="state_following_offset">0.0</param>
+        </xacro:if>
+        <xacro:unless value="${use_fake_hardware}">
+          <plugin>odrive_hardware_interface/ODriveHardwareInterface</plugin>
+        </xacro:unless>
+      </hardware>
+
+      <joint name="left_wheel_joint">
+        <command_interface name="velocity">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <command_interface name="position" />
+        <command_interface name="effort" />
+        <state_interface name="velocity"/>
+        <state_interface name="position"/>
+        <state_interface name="effort" />
+        <param name="axis">0</param>
+        <param name="enable_watchdog">1</param>
+        <param name="watchdog_timeout">0.5</param>
+      </joint>
+      <sensor name="axis0">
+        <state_interface name="axis_error" />
+        <state_interface name="motor_error" />
+        <state_interface name="encoder_error" />
+        <state_interface name="controller_error" />
+        <state_interface name="fet_temperature" />
+        <state_interface name="motor_temperature" />
+      </sensor>
+
+      <joint name="right_wheel_joint">
+        <command_interface name="velocity">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <command_interface name="position" />
+        <command_interface name="effort" />
+        <state_interface name="velocity"/>
+        <state_interface name="position"/>
+        <state_interface name="effort" />
+        <param name="axis">1</param>
+        <param name="enable_watchdog">1</param>
+        <param name="watchdog_timeout">0.5</param>
+      </joint>
+      <sensor name="axis1">
+        <state_interface name="axis_error" />
+        <state_interface name="motor_error" />
+        <state_interface name="encoder_error" />
+        <state_interface name="controller_error" />
+        <state_interface name="fet_temperature" />
+        <state_interface name="motor_temperature" />
+      </sensor>
+    </ros2_control>
+
+  </xacro:macro>
+
+</robot>

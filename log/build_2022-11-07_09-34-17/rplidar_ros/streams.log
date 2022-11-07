@@ -1,0 +1,332 @@
+[0.013s] Invoking command in '/home/nadav/ODrive_Controller/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/rplidar -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rplidar_ros
+[0.049s] -- The C compiler identification is GNU 11.3.0
+[0.084s] -- The CXX compiler identification is GNU 11.3.0
+[0.089s] -- Detecting C compiler ABI info
+[0.128s] -- Detecting C compiler ABI info - done
+[0.133s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.133s] -- Detecting C compile features
+[0.134s] -- Detecting C compile features - done
+[0.135s] -- Detecting CXX compiler ABI info
+[0.181s] -- Detecting CXX compiler ABI info - done
+[0.186s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.186s] -- Detecting CXX compile features
+[0.187s] -- Detecting CXX compile features - done
+[0.188s] -- Found ament_cmake_auto: 1.3.2 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.305s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.365s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.443s] -- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.445s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.452s] -- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.466s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.474s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.521s] -- Found rmw_implementation_cmake: 6.1.0 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.522s] -- Found rmw_fastrtps_cpp: 6.2.1 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.582s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.601s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.631s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.888s] -- Configuring done
+[0.899s] -- Generating done
+[0.900s] -- Build files have been written to: /home/nadav/ODrive_Controller/build/rplidar_ros
+[0.906s] Invoked command in '/home/nadav/ODrive_Controller/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/rplidar -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rplidar_ros
+[0.907s] Invoking command in '/home/nadav/ODrive_Controller/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rplidar_ros -- -j20 -l20
+[0.936s] [ 22%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/src/rplidar_node.cpp.o[0m
+[0.936s] [ 44%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[0.936s] [ 44%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[0.936s] [ 44%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[0.936s] [ 55%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/rplidar_driver.cpp.o[0m
+[0.937s] [ 66%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/hal/thread.cpp.o[0m
+[1.129s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:36[m[K:
+[1.129s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/include/rplidar_node.hpp:50:[m[K [01;35m[Kwarning: [m[K"M_PI" redefined
+[1.129s]    50 | #define M_PI 3.1415926535897932384626433832795
+[1.129s]       | 
+[1.129s] In file included from [01m[K/usr/include/c++/11/cmath:45[m[K,
+[1.129s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18[m[K,
+[1.129s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24[m[K,
+[1.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[1.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.130s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/include/rplidar_node.hpp:34[m[K,
+[1.130s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:36[m[K:
+[1.131s] [01m[K/usr/include/math.h:1151:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[1.131s]  1151 | # define M_PI           3.14159265358979323846  /* pi */
+[1.131s]       | 
+[1.168s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:39[m[K,
+[1.168s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/sdkcommon.h:48[m[K,
+[1.168s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/hal/thread.cpp:35[m[K:
+[1.168s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.168s]    59 |     _u8 data[[01;35m[K0[m[K];
+[1.168s]       |              [01;35m[K^[m[K
+[1.169s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:40[m[K,
+[1.169s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/sdkcommon.h:48[m[K,
+[1.169s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/hal/thread.cpp:35[m[K:
+[1.169s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.169s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[1.169s]       |                  [01;35m[K^[m[K
+[1.169s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/hal/thread.cpp:43[m[K:
+[1.169s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)[m[K’:
+[1.170s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/arch/linux/thread.hpp:48:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[1.170s]    48 |     pthread_create((pthread_t *)&newborn._handle, NULL, [01;35m[K(void * (*)(void *))proc[m[K, data);
+[1.170s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.170s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::join(long unsigned int)[m[K’:
+[1.170s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/arch/linux/thread.hpp:129:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.170s]   129 | u_result Thread::join([01;35m[Kunsigned long timeout[m[K)
+[1.170s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[1.174s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:39[m[K,
+[1.174s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/sdkcommon.h:48[m[K,
+[1.174s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[1.174s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.174s]    59 |     _u8 data[[01;35m[K0[m[K];
+[1.174s]       |              [01;35m[K^[m[K
+[1.174s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:40[m[K,
+[1.175s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/sdkcommon.h:48[m[K,
+[1.175s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[1.175s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.175s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[1.175s]       |                  [01;35m[K^[m[K
+[1.180s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:39[m[K,
+[1.180s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/sdkcommon.h:48[m[K,
+[1.180s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:35[m[K:
+[1.180s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.180s]    59 |     _u8 data[[01;35m[K0[m[K];
+[1.180s]       |              [01;35m[K^[m[K
+[1.181s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:40[m[K,
+[1.181s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/sdkcommon.h:48[m[K,
+[1.181s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:35[m[K:
+[1.181s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.181s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[1.181s]       |                  [01;35m[K^[m[K
+[1.181s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)[m[K’:
+[1.181s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_socket.cpp:438:17:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.181s]   438 |         if ([01;35m[Kans == (int)len[m[K) {
+[1.181s]       |             [01;35m[K~~~~^~~~~~~~~~~[m[K
+[1.182s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/arch/linux/arch_linux.h:42[m[K,
+[1.182s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/src/sdkcommon.h:40[m[K,
+[1.182s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[1.182s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress&, const void*, size_t)[m[K’:
+[1.182s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_socket.cpp:726:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.182s]   726 |             assert([01;35m[Kans == (int)len[m[K);
+[1.182s]       |                    [01;35m[K~~~~^~~~~~~~~~~[m[K
+[1.240s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)[m[K’:
+[1.240s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.240s]    97 | bool raw_serial::open(const char * portname, uint32_t baudrate, [01;35m[Kuint32_t flags[m[K)
+[1.240s]       |                                                                 [01;35m[K~~~~~~~~~^~~~~[m[K
+[1.240s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::flush(_u32)[m[K’:
+[1.240s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.240s]   281 | void raw_serial::flush( [01;35m[K_u32 flags[m[K)
+[1.241s]       |                         [01;35m[K~~~~~^~~~~[m[K
+[1.241s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)[m[K’:
+[1.241s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.241s]   286 | int raw_serial::waitforsent([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[1.241s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[1.241s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)[m[K’:
+[1.241s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.241s]   292 | int raw_serial::waitforrecv([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[1.241s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[1.245s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::reset(_u32)[m[K’:
+[1.245s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:121:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.245s]   121 | u_result RPlidarDriverImplCommon::reset([01;35m[K_u32 timeout[m[K)
+[1.245s]       |                                         [01;35m[K~~~~~^~~~~~~[m[K
+[1.246s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::checkIfTofLidar(bool&, _u32)[m[K’:
+[1.246s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:275:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.246s]   275 | u_result RPlidarDriverImplCommon::checkIfTofLidar(bool & isTofLidar, [01;35m[K_u32 timeout[m[K)
+[1.246s]       |                                                                      [01;35m[K~~~~~^~~~~~~[m[K
+[1.248s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual int rp::standalone::rplidar::RPlidarDriverImplCommon::_getSyncBitByAngle(int, int)[m[K’:
+[1.248s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:671:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klast_angleInc_q16[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.248s]   671 |     static int [01;35m[Klast_angleInc_q16[m[K = 0;
+[1.248s]       |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[1.248s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:673:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsyncBit_check_threshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.248s]   673 |     int [01;35m[KsyncBit_check_threshold[m[K = (int)((5 << 16) / angleInc_q16) + 1;//find syncBit in 0~3 degree
+[1.248s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.248s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::_cacheUltraCapsuledScanData()[m[K’:
+[1.248s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:771:46:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_scan_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.248s]   771 |     size_t                                   [01;35m[Klast_scan_count[m[K = 0;
+[1.248s]       |                                              [01;35m[K^~~~~~~~~~~~~~~[m[K
+[1.249s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[1.249s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:850:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsyncBit_check_threshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.249s]   850 |             int [01;35m[KsyncBit_check_threshold[m[K = (int)((2 << 16) / angleInc_q16) + 1;//find syncBit in 0~1 degree
+[1.249s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.249s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_dense_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[1.249s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:903:30:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[1.249s]   903 |             const int dist = [01;35m[Kstatic_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance)[m[K;
+[1.249s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.250s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In function ‘[01m[K_u32 rp::standalone::rplidar::_crc32cal(_u32, void*, _u16)[m[K’:
+[1.250s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:1027:23:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K-[m[K’ in operand of ‘[01m[K&[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.250s]  1027 |     _u8 leftBytes = [01;35m[K4 - len[m[K & 0x3;
+[1.250s]       |                     [01;35m[K~~^~~~~[m[K
+[1.251s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_ultraCapsuleToNormal(const rplidar_response_ultra_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[1.251s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:1238:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.251s]  1238 |             if (([01;35m[Kdist_predict1 == 0xFFFFFE00[m[K) || (dist_predict1 == 0x1FF)) {
+[1.251s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[1.251s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:1246:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.251s]  1246 |             if (([01;35m[Kdist_predict2 == 0xFFFFFE00[m[K) || (dist_predict2 == 0x1FF)) {
+[1.251s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[1.251s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:1256:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsyncBit_check_threshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.251s]  1256 |                 int [01;35m[KsyncBit_check_threshold[m[K = (int)((3 << 16) / angleInc_q16)+1;//find syncBit in 0~1 degree
+[1.251s]       |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.254s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<rp::standalone::rplidar::RplidarScanMode>&, _u32)[m[K’:
+[1.254s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:1484:105:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.254s]  1484 | u_result RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<RplidarScanMode>& outModes, [01;35m[K_u32 timeoutInMs[m[K)
+[1.254s]       |                                                                                                    [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[1.255s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startScan(bool, bool, _u32, rp::standalone::rplidar::RplidarScanMode*)[m[K’:
+[1.255s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:1581:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.255s]  1581 | u_result RPlidarDriverImplCommon::startScan(bool force, bool useTypicalScan, [01;35m[K_u32 options[m[K, RplidarScanMode* outUsedScanMode)
+[1.255s]       |                                                                              [01;35m[K~~~~~^~~~~~~[m[K
+[1.256s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::stop(_u32)[m[K’:
+[1.256s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:1805:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.256s]  1805 | u_result RPlidarDriverImplCommon::stop([01;35m[K_u32 timeout[m[K)
+[1.256s]       |                                        [01;35m[K~~~~~^~~~~~~[m[K
+[1.258s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::setLidarSpinSpeed(_u16, _u32)[m[K’:
+[1.258s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:2193:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.258s]  2193 | u_result RPlidarDriverImplCommon::setLidarSpinSpeed(_u16 rpm, [01;35m[K_u32 timeout[m[K)
+[1.258s]       |                                                               [01;35m[K~~~~~^~~~~~~[m[K
+[1.258s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverSerial::connect(const char*, _u32, _u32)[m[K’:
+[1.258s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:2270:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.258s]  2270 | u_result RPlidarDriverSerial::connect(const char * port_path, _u32 baudrate, [01;35m[K_u32 flag[m[K)
+[1.258s]       |                                                                              [01;35m[K~~~~~^~~~[m[K
+[1.258s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverTCP::connect(const char*, _u32, _u32)[m[K’:
+[1.258s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:2312:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.258s]  2312 | u_result RPlidarDriverTCP::connect(const char * ipStr, _u32 port, [01;35m[K_u32 flag[m[K)
+[1.258s]       |                                                                   [01;35m[K~~~~~^~~~[m[K
+[1.273s] /home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp: In instantiation of ‘[01m[Ku_result rp::standalone::rplidar::ascendScanData_(TNode*, size_t) [with TNode = _rplidar_response_measurement_node_t; u_result = unsigned int; size_t = long unsigned int][m[K’:
+[1.273s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:2025:64:[m[K   required from here
+[1.273s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:1991:27:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K>= 0[m[K’ is always true [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+[1.273s]  1991 |     for (i = count - 1; [01;35m[Ki >= 0[m[K; i--) {
+[1.273s]       |                         [01;35m[K~~^~~~[m[K
+[1.273s] /home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp: In instantiation of ‘[01m[Ku_result rp::standalone::rplidar::ascendScanData_(TNode*, size_t) [with TNode = rplidar_response_measurement_node_hq_t; u_result = unsigned int; size_t = long unsigned int][m[K’:
+[1.273s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:2030:67:[m[K   required from here
+[1.273s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:1991:27:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K>= 0[m[K’ is always true [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+[1.312s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startMotor()[m[K’:
+[1.312s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/sdk/src/rplidar_driver.cpp:2225:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.312s]  2225 | [01;35m[K}[m[K
+[1.312s]       | [01;35m[K^[m[K
+[2.324s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:39[m[K,
+[2.324s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/include/rplidar_node.hpp:41[m[K,
+[2.324s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:36[m[K:
+[2.324s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.324s]    59 |     _u8 data[[01;35m[K0[m[K];
+[2.324s]       |              [01;35m[K^[m[K
+[2.324s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:40[m[K,
+[2.324s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/include/rplidar_node.hpp:41[m[K,
+[2.324s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:36[m[K:
+[2.324s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.325s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[2.325s]       |                  [01;35m[K^[m[K
+[2.363s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid rplidar_ros::rplidar_node::stop_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)[m[K’:
+[2.363s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:248:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.363s]   248 | void rplidar_node::stop_motor([01;35m[Kconst EmptyRequest req[m[K, EmptyResponse res)
+[2.363s]       |                               [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.363s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:248:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.363s]   248 | void rplidar_node::stop_motor(const EmptyRequest req, [01;35m[KEmptyResponse res[m[K)
+[2.363s]       |                                                       [01;35m[K~~~~~~~~~~~~~~^~~[m[K
+[2.363s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid rplidar_ros::rplidar_node::start_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)[m[K’:
+[2.363s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:259:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.364s]   259 | void rplidar_node::start_motor([01;35m[Kconst EmptyRequest req[m[K, EmptyResponse res)
+[2.364s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.364s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:259:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.364s]   259 | void rplidar_node::start_motor(const EmptyRequest req, [01;35m[KEmptyResponse res[m[K)
+[2.364s]       |                                                        [01;35m[K~~~~~~~~~~~~~~^~~[m[K
+[2.367s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid rplidar_ros::rplidar_node::publish_loop()[m[K’:
+[2.367s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:362:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.367s]   362 |           for (j = 0; [01;35m[Kj < m_angle_compensate_multiple[m[K; j++) {
+[2.367s]       |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.367s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:383:44:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.367s]   383 |       for (size_t x = start_node, y = 0; [01;35m[Kx < end_node[m[K; ++x, ++y) {
+[2.368s]       |                                          [01;35m[K~~^~~~~~~~~~[m[K
+[2.368s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:390:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.368s]   390 |     float [01;35m[Kangle_min[m[K = deg_2_rad(0.0f);
+[2.368s]       |           [01;35m[K^~~~~~~~~[m[K
+[2.368s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/rplidar_node.cpp:391:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.368s]   391 |     float [01;35m[Kangle_max[m[K = deg_2_rad(359.0f);
+[2.368s]       |           [01;35m[K^~~~~~~~~[m[K
+[4.322s] [ 77%] [32m[1mLinking CXX shared library librplidar_composition_node.so[0m
+[4.497s] [ 77%] Built target rplidar_composition_node
+[4.509s] [ 88%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o[0m
+[4.643s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/standalone_rplidar.cpp:16[m[K:
+[4.643s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/include/rplidar_node.hpp:50:[m[K [01;35m[Kwarning: [m[K"M_PI" redefined
+[4.643s]    50 | #define M_PI 3.1415926535897932384626433832795
+[4.643s]       | 
+[4.643s] In file included from [01m[K/usr/include/c++/11/cmath:45[m[K,
+[4.643s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18[m[K,
+[4.643s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24[m[K,
+[4.643s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[4.643s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[4.643s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[4.643s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.643s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.643s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.643s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.644s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.644s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.644s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.644s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/include/rplidar_node.hpp:34[m[K,
+[4.644s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/standalone_rplidar.cpp:16[m[K:
+[4.644s] [01m[K/usr/include/math.h:1151:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[4.644s]  1151 | # define M_PI           3.14159265358979323846  /* pi */
+[4.644s]       | 
+[5.815s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:39[m[K,
+[5.815s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/include/rplidar_node.hpp:41[m[K,
+[5.815s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/standalone_rplidar.cpp:16[m[K:
+[5.815s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[5.815s]    59 |     _u8 data[[01;35m[K0[m[K];
+[5.815s]       |              [01;35m[K^[m[K
+[5.815s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar.h:40[m[K,
+[5.815s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/include/rplidar_node.hpp:41[m[K,
+[5.815s]                  from [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/standalone_rplidar.cpp:16[m[K:
+[5.815s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[5.816s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[5.816s]       |                  [01;35m[K^[m[K
+[6.071s] In file included from [01m[K/home/nadav/ODrive_Controller/src/rplidar/src/standalone_rplidar.cpp:16[m[K:
+[6.071s] [01m[K/home/nadav/ODrive_Controller/src/rplidar/include/rplidar_node.hpp:76:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kfloat rplidar_ros::getAngle(const rplidar_response_measurement_node_hq_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[6.071s]    76 | static float [01;35m[KgetAngle[m[K(const rplidar_response_measurement_node_hq_t & node)
+[6.071s]       |              [01;35m[K^~~~~~~~[m[K
+[6.140s] [100%] [32m[1mLinking CXX executable rplidar_composition[0m
+[6.247s] [100%] Built target rplidar_composition
+[6.254s] Invoked command in '/home/nadav/ODrive_Controller/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rplidar_ros -- -j20 -l20
+[6.282s] Invoking command in '/home/nadav/ODrive_Controller/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rplidar_ros
+[6.289s] -- Install configuration: ""
+[6.289s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[6.290s] -- Set runtime path of "/home/nadav/ODrive_Controller/install/rplidar_ros/lib/rplidar_ros/rplidar_composition" to ""
+[6.291s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch
+[6.291s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py
+[6.291s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py
+[6.291s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py
+[6.291s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py
+[6.291s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py
+[6.291s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py
+[6.292s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py
+[6.292s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py
+[6.292s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py
+[6.292s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/rviz
+[6.292s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz
+[6.292s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/lib/librplidar_composition_node.so
+[6.297s] -- Set runtime path of "/home/nadav/ODrive_Controller/install/rplidar_ros/lib/librplidar_composition_node.so" to ""
+[6.297s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/include
+[6.298s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/include/rplidar_node.hpp
+[6.298s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/include/visibility.h
+[6.298s] -- Up-to-date: /home/nadav/ODrive_Controller/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[6.298s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[6.298s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[6.298s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[6.298s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[6.298s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[6.298s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[6.299s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[6.299s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[6.299s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[6.299s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[6.299s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.dsv
+[6.299s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[6.299s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/ament_index/resource_index/rclcpp_components/rplidar_ros
+[6.299s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.300s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.300s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[6.300s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[6.300s] -- Installing: /home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.xml
+[6.303s] Invoked command in '/home/nadav/ODrive_Controller/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rplidar_ros

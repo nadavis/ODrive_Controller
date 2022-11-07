@@ -1,0 +1,4 @@
+source;share/odrive_hardware_interface/local_setup.bash
+source;share/odrive_hardware_interface/local_setup.dsv
+source;share/odrive_hardware_interface/local_setup.sh
+source;share/odrive_hardware_interface/local_setup.zsh

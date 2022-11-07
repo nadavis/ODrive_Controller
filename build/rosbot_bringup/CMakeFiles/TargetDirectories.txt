@@ -1,0 +1,9 @@
+/home/nadav/ODrive_Controller/build/rosbot_bringup/CMakeFiles/uninstall.dir
+/home/nadav/ODrive_Controller/build/rosbot_bringup/CMakeFiles/rosbot_bringup_uninstall.dir
+/home/nadav/ODrive_Controller/build/rosbot_bringup/CMakeFiles/test.dir
+/home/nadav/ODrive_Controller/build/rosbot_bringup/CMakeFiles/edit_cache.dir
+/home/nadav/ODrive_Controller/build/rosbot_bringup/CMakeFiles/rebuild_cache.dir
+/home/nadav/ODrive_Controller/build/rosbot_bringup/CMakeFiles/list_install_components.dir
+/home/nadav/ODrive_Controller/build/rosbot_bringup/CMakeFiles/install.dir
+/home/nadav/ODrive_Controller/build/rosbot_bringup/CMakeFiles/install/local.dir
+/home/nadav/ODrive_Controller/build/rosbot_bringup/CMakeFiles/install/strip.dir

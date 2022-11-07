@@ -1,0 +1,573 @@
+[0.207s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.207s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f484e2f2f80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f484e44fa00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f484e44fa00>>)
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.227s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nadav/ODrive_Controller'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extension 'ros'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extensions ['cmake', 'python']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extension 'cmake'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extension 'python'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extensions ['python_setup_py']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive) by extension 'python_setup_py'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_bringup) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_bringup) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_bringup) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_bringup) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_bringup) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_bringup) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_bringup) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_bringup) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive/odrive_demo_bringup' with type 'ros.ament_cmake' and name 'odrive_demo_bringup'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_description) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_description) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_description) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_description) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_description) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_description) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_description) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_description) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_demo_description) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive/odrive_demo_description' with type 'ros.ament_cmake' and name 'odrive_demo_description'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_hardware_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_hardware_interface) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_hardware_interface) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_hardware_interface) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_hardware_interface) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_hardware_interface) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_hardware_interface) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_hardware_interface) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_hardware_interface) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive/odrive_hardware_interface' with type 'ros.ament_cmake' and name 'odrive_hardware_interface'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_ros2_control) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_ros2_control) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_ros2_control) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_ros2_control) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_ros2_control) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_ros2_control) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_ros2_control) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive/odrive_ros2_control) by extension 'ros'
+[0.241s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive/odrive_ros2_control' with type 'ros.ament_cmake' and name 'odrive_ros2_control'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_bringup) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_bringup) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_bringup) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_bringup) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_bringup) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_bringup) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_bringup) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_bringup) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosbot_bringup' with type 'ros.ament_cmake' and name 'rosbot_bringup'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_description) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_description) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_description) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_description) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_description) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_description) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_description) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosbot_description) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosbot_description' with type 'ros.ament_cmake' and name 'rosbot_description'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/nadav/ODrive_Controller/install/rplidar_ros' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.259s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/nadav/ODrive_Controller/install/rosbot_bringup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/nadav/ODrive_Controller/install/rosbot_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/nadav/ODrive_Controller/install/odrive_ros2_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/nadav/ODrive_Controller/install/odrive_hardware_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/nadav/ODrive_Controller/install/odrive_demo_bringup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/nadav/ODrive_Controller/install/odrive_demo_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/nadav/ODrive_Controller/install/rplidar_ros' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/nadav/ODrive_Controller/install/rosbot_bringup' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/nadav/ODrive_Controller/install/rosbot_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/nadav/ODrive_Controller/install/odrive_ros2_control' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/nadav/ODrive_Controller/install/odrive_hardware_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/nadav/ODrive_Controller/install/odrive_demo_bringup' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/nadav/ODrive_Controller/install/odrive_demo_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.260s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/nadav/ODrive_Controller/install
+[0.262s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 382 installed packages in /opt/ros/humble
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_target' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.308s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_demo_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nadav/ODrive_Controller/build/odrive_demo_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nadav/ODrive_Controller/install/odrive_demo_description', 'merge_install': False, 'path': '/home/nadav/ODrive_Controller/src/odrive/odrive_demo_description', 'symlink_install': False, 'test_result_base': None}
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_target' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.309s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_hardware_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nadav/ODrive_Controller/build/odrive_hardware_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nadav/ODrive_Controller/install/odrive_hardware_interface', 'merge_install': False, 'path': '/home/nadav/ODrive_Controller/src/odrive/odrive_hardware_interface', 'symlink_install': False, 'test_result_base': None}
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'rosbot_description' build argument 'cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'rosbot_description' build argument 'cmake_target' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'rosbot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'rosbot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'rosbot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'rosbot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'rosbot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'rosbot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'rosbot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.309s] DEBUG:colcon.colcon_core.verb:Building package 'rosbot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nadav/ODrive_Controller/build/rosbot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nadav/ODrive_Controller/install/rosbot_description', 'merge_install': False, 'path': '/home/nadav/ODrive_Controller/src/rosbot_description', 'symlink_install': False, 'test_result_base': None}
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.310s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nadav/ODrive_Controller/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nadav/ODrive_Controller/install/rplidar_ros', 'merge_install': False, 'path': '/home/nadav/ODrive_Controller/src/rplidar', 'symlink_install': False, 'test_result_base': None}
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_target' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.311s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_demo_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nadav/ODrive_Controller/build/odrive_demo_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nadav/ODrive_Controller/install/odrive_demo_bringup', 'merge_install': False, 'path': '/home/nadav/ODrive_Controller/src/odrive/odrive_demo_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'rosbot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'rosbot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'rosbot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'rosbot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'rosbot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'rosbot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'rosbot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'rosbot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'rosbot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.312s] DEBUG:colcon.colcon_core.verb:Building package 'rosbot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nadav/ODrive_Controller/build/rosbot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nadav/ODrive_Controller/install/rosbot_bringup', 'merge_install': False, 'path': '/home/nadav/ODrive_Controller/src/rosbot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.312s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nadav/ODrive_Controller/build/odrive_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nadav/ODrive_Controller/install/odrive_ros2_control', 'merge_install': False, 'path': '/home/nadav/ODrive_Controller/src/odrive/odrive_ros2_control', 'symlink_install': False, 'test_result_base': None}
+[0.313s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.315s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.315s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nadav/ODrive_Controller/src/odrive/odrive_demo_description' with build type 'ament_cmake'
+[0.315s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nadav/ODrive_Controller/src/odrive/odrive_demo_description'
+[0.318s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.319s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.319s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.322s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nadav/ODrive_Controller/src/odrive/odrive_hardware_interface' with build type 'ament_cmake'
+[0.322s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nadav/ODrive_Controller/src/odrive/odrive_hardware_interface'
+[0.322s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.325s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nadav/ODrive_Controller/src/rosbot_description' with build type 'ament_cmake'
+[0.326s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nadav/ODrive_Controller/src/rosbot_description'
+[0.326s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.326s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.329s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nadav/ODrive_Controller/src/rplidar' with build type 'ament_cmake'
+[0.329s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nadav/ODrive_Controller/src/rplidar'
+[0.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/odrive/odrive_demo_description -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/odrive_demo_description
+[0.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/odrive/odrive_hardware_interface -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/odrive_hardware_interface
+[0.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/rosbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/rosbot_description -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rosbot_description
+[0.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/rplidar -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rplidar_ros
+[0.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/odrive/odrive_demo_description -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/odrive_demo_description
+[0.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/odrive_demo_description -- -j20 -l20
+[0.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/rosbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/rosbot_description -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rosbot_description
+[0.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/rosbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rosbot_description -- -j20 -l20
+[0.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/odrive_demo_description -- -j20 -l20
+[0.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/rosbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rosbot_description -- -j20 -l20
+[0.782s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/odrive_demo_description
+[0.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/rosbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rosbot_description
+[0.789s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_demo_description)
+[0.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/odrive_demo_description
+[0.794s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description' for CMake module files
+[0.795s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description' for CMake config files
+[0.795s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_demo_description', 'cmake_prefix_path')
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.ps1'
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.dsv'
+[0.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.sh'
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description/bin'
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description/lib/pkgconfig/odrive_demo_description.pc'
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description/lib/python3.10/site-packages'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description/bin'
+[0.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.ps1'
+[0.799s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.dsv'
+[0.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.sh'
+[0.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.bash'
+[0.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.zsh'
+[0.800s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/odrive_demo_description/share/colcon-core/packages/odrive_demo_description)
+[0.814s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_demo_description)
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description' for CMake module files
+[0.817s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description' for CMake config files
+[0.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_demo_description', 'cmake_prefix_path')
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.ps1'
+[0.819s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.dsv'
+[0.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.sh'
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description/bin'
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description/lib/pkgconfig/odrive_demo_description.pc'
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description/lib/python3.10/site-packages'
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_description/bin'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.ps1'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.dsv'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.sh'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.bash'
+[0.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_description/share/odrive_demo_description/package.zsh'
+[0.824s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/odrive_demo_description/share/colcon-core/packages/odrive_demo_description)
+[0.824s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nadav/ODrive_Controller/src/odrive/odrive_demo_bringup' with build type 'ament_cmake'
+[0.824s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nadav/ODrive_Controller/src/odrive/odrive_demo_bringup'
+[0.826s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.826s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_demo_bringup': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/odrive/odrive_demo_bringup -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/odrive_demo_bringup
+[0.840s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rosbot_description)
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description' for CMake module files
+[0.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/rosbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rosbot_description
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description' for CMake config files
+[0.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosbot_description', 'cmake_prefix_path')
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/hook/cmake_prefix_path.ps1'
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/hook/cmake_prefix_path.dsv'
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/hook/cmake_prefix_path.sh'
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description/bin'
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description/lib/pkgconfig/rosbot_description.pc'
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description/lib/python3.10/site-packages'
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description/bin'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.ps1'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.dsv'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.sh'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.bash'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.zsh'
+[0.846s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/rosbot_description/share/colcon-core/packages/rosbot_description)
+[0.859s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rosbot_description)
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description' for CMake module files
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description' for CMake config files
+[0.861s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosbot_description', 'cmake_prefix_path')
+[0.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/hook/cmake_prefix_path.ps1'
+[0.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/hook/cmake_prefix_path.dsv'
+[0.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/hook/cmake_prefix_path.sh'
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description/bin'
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description/lib/pkgconfig/rosbot_description.pc'
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description/lib/python3.10/site-packages'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_description/bin'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.ps1'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.dsv'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.sh'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.bash'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_description/share/rosbot_description/package.zsh'
+[0.864s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/rosbot_description/share/colcon-core/packages/rosbot_description)
+[1.233s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_demo_bringup' returned '0': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/odrive/odrive_demo_bringup -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/odrive_demo_bringup
+[1.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_demo_bringup': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/odrive_demo_bringup -- -j20 -l20
+[1.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/rplidar -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rplidar_ros
+[1.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rplidar_ros -- -j20 -l20
+[1.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_demo_bringup' returned '0': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/odrive_demo_bringup -- -j20 -l20
+[1.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_demo_bringup': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/odrive_demo_bringup
+[1.278s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_demo_bringup)
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup' for CMake module files
+[1.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_demo_bringup' returned '0': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/odrive_demo_bringup
+[1.281s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup' for CMake config files
+[1.281s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_demo_bringup', 'cmake_prefix_path')
+[1.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.ps1'
+[1.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.dsv'
+[1.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.sh'
+[1.284s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/bin'
+[1.284s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/lib/pkgconfig/odrive_demo_bringup.pc'
+[1.284s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/lib/python3.10/site-packages'
+[1.284s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/bin'
+[1.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.ps1'
+[1.286s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.dsv'
+[1.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.sh'
+[1.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.bash'
+[1.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.zsh'
+[1.288s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/colcon-core/packages/odrive_demo_bringup)
+[1.302s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_demo_bringup)
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup' for CMake module files
+[1.305s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup' for CMake config files
+[1.305s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_demo_bringup', 'cmake_prefix_path')
+[1.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.ps1'
+[1.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.dsv'
+[1.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.sh'
+[1.308s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/bin'
+[1.308s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/lib/pkgconfig/odrive_demo_bringup.pc'
+[1.308s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/lib/python3.10/site-packages'
+[1.308s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/bin'
+[1.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.ps1'
+[1.310s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.dsv'
+[1.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.sh'
+[1.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.bash'
+[1.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/odrive_demo_bringup/package.zsh'
+[1.312s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/odrive_demo_bringup/share/colcon-core/packages/odrive_demo_bringup)
+[1.651s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/odrive/odrive_hardware_interface -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/odrive_hardware_interface
+[1.653s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/odrive_hardware_interface -- -j20 -l20
+[4.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/odrive_hardware_interface -- -j20 -l20
+[4.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/odrive_hardware_interface
+[4.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_hardware_interface)
+[4.499s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface' for CMake module files
+[4.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/odrive_hardware_interface
+[4.500s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface' for CMake config files
+[4.500s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_hardware_interface', 'cmake_prefix_path')
+[4.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.ps1'
+[4.501s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.dsv'
+[4.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.sh'
+[4.502s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib'
+[4.502s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_hardware_interface', 'ld_library_path_lib')
+[4.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.ps1'
+[4.503s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.dsv'
+[4.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.sh'
+[4.503s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/bin'
+[4.503s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib/pkgconfig/odrive_hardware_interface.pc'
+[4.503s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib/python3.10/site-packages'
+[4.504s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/bin'
+[4.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.ps1'
+[4.505s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.dsv'
+[4.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.sh'
+[4.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.bash'
+[4.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.zsh'
+[4.505s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/colcon-core/packages/odrive_hardware_interface)
+[4.523s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_hardware_interface)
+[4.524s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface' for CMake module files
+[4.524s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface' for CMake config files
+[4.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_hardware_interface', 'cmake_prefix_path')
+[4.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.ps1'
+[4.526s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.dsv'
+[4.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.sh'
+[4.526s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib'
+[4.526s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_hardware_interface', 'ld_library_path_lib')
+[4.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.ps1'
+[4.527s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.dsv'
+[4.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.sh'
+[4.527s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/bin'
+[4.527s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib/pkgconfig/odrive_hardware_interface.pc'
+[4.528s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib/python3.10/site-packages'
+[4.528s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/bin'
+[4.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.ps1'
+[4.529s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.dsv'
+[4.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.sh'
+[4.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.bash'
+[4.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/odrive_hardware_interface/package.zsh'
+[4.530s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/odrive_hardware_interface/share/colcon-core/packages/odrive_hardware_interface)
+[4.530s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nadav/ODrive_Controller/src/rosbot_bringup' with build type 'ament_cmake'
+[4.530s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nadav/ODrive_Controller/src/rosbot_bringup'
+[4.531s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.531s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.534s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nadav/ODrive_Controller/src/odrive/odrive_ros2_control' with build type 'ament_cmake'
+[4.534s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nadav/ODrive_Controller/src/odrive/odrive_ros2_control'
+[4.535s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.535s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/rosbot_bringup': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/nadav/ODrive_Controller/src/rosbot_bringup -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rosbot_bringup
+[4.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_ros2_control': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/nadav/ODrive_Controller/src/odrive/odrive_ros2_control -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/odrive_ros2_control
+[4.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/nadav/ODrive_Controller/src/odrive/odrive_ros2_control -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/odrive_ros2_control
+[4.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_ros2_control': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/odrive_ros2_control -- -j20 -l20
+[4.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/rosbot_bringup' returned '0': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/nadav/ODrive_Controller/src/rosbot_bringup -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rosbot_bringup
+[4.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/rosbot_bringup': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rosbot_bringup -- -j20 -l20
+[4.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/odrive_ros2_control -- -j20 -l20
+[4.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/rosbot_bringup' returned '0': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rosbot_bringup -- -j20 -l20
+[4.982s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/odrive_ros2_control': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/odrive_ros2_control
+[4.983s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/rosbot_bringup': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rosbot_bringup
+[4.989s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_ros2_control)
+[4.990s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control' for CMake module files
+[4.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/odrive_demo_description:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/odrive_ros2_control
+[4.992s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control' for CMake config files
+[4.992s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'cmake_prefix_path')
+[4.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.ps1'
+[4.994s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.dsv'
+[4.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.sh'
+[4.995s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control/bin'
+[4.995s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control/lib/pkgconfig/odrive_ros2_control.pc'
+[4.995s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control/lib/python3.10/site-packages'
+[4.995s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control/bin'
+[4.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.ps1'
+[4.997s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv'
+[4.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.sh'
+[4.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.bash'
+[4.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.zsh'
+[4.999s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/colcon-core/packages/odrive_ros2_control)
+[5.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rosbot_bringup)
+[5.001s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup' for CMake module files
+[5.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/rosbot_bringup' returned '0': CMAKE_PREFIX_PATH=/home/nadav/ODrive_Controller/install/rosbot_description:/home/nadav/ODrive_Controller/install/odrive_hardware_interface:/home/nadav/ODrive_Controller/install/rplidar_ros:/home/nadav/ODrive_Controller/install/rosbot_bringup:/home/nadav/ODrive_Controller/install/odrive_ros2_control:/home/nadav/ODrive_Controller/install/odrive_demo_bringup:/home/nadav/ODrive_Controller/install/odrive_demo_description:/opt/ros/humble LD_LIBRARY_PATH=/home/nadav/ODrive_Controller/install/odrive_hardware_interface/lib:/home/nadav/ODrive_Controller/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rosbot_bringup
+[5.002s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup' for CMake config files
+[5.002s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosbot_bringup', 'cmake_prefix_path')
+[5.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/hook/cmake_prefix_path.ps1'
+[5.003s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/hook/cmake_prefix_path.dsv'
+[5.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/hook/cmake_prefix_path.sh'
+[5.004s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup/bin'
+[5.004s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup/lib/pkgconfig/rosbot_bringup.pc'
+[5.004s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup/lib/python3.10/site-packages'
+[5.004s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup/bin'
+[5.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.ps1'
+[5.005s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.dsv'
+[5.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.sh'
+[5.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.bash'
+[5.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.zsh'
+[5.006s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/rosbot_bringup/share/colcon-core/packages/rosbot_bringup)
+[5.012s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_ros2_control)
+[5.013s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control' for CMake module files
+[5.014s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control' for CMake config files
+[5.014s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'cmake_prefix_path')
+[5.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.ps1'
+[5.015s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.dsv'
+[5.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.sh'
+[5.015s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control/bin'
+[5.015s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control/lib/pkgconfig/odrive_ros2_control.pc'
+[5.015s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control/lib/python3.10/site-packages'
+[5.016s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/odrive_ros2_control/bin'
+[5.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.ps1'
+[5.017s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv'
+[5.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.sh'
+[5.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.bash'
+[5.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/odrive_ros2_control/package.zsh'
+[5.018s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/odrive_ros2_control/share/colcon-core/packages/odrive_ros2_control)
+[5.019s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rosbot_bringup)
+[5.020s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup' for CMake module files
+[5.020s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup' for CMake config files
+[5.020s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosbot_bringup', 'cmake_prefix_path')
+[5.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/hook/cmake_prefix_path.ps1'
+[5.021s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/hook/cmake_prefix_path.dsv'
+[5.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/hook/cmake_prefix_path.sh'
+[5.022s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup/bin'
+[5.022s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup/lib/pkgconfig/rosbot_bringup.pc'
+[5.022s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup/lib/python3.10/site-packages'
+[5.022s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rosbot_bringup/bin'
+[5.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.ps1'
+[5.023s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.dsv'
+[5.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.sh'
+[5.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.bash'
+[5.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rosbot_bringup/share/rosbot_bringup/package.zsh'
+[5.024s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/rosbot_bringup/share/colcon-core/packages/rosbot_bringup)
+[6.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rplidar_ros -- -j20 -l20
+[6.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nadav/ODrive_Controller/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rplidar_ros
+[6.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[6.632s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros' for CMake module files
+[6.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nadav/ODrive_Controller/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rplidar_ros
+[6.633s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros' for CMake config files
+[6.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[6.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[6.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[6.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[6.635s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/lib'
+[6.635s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[6.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[6.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[6.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[6.636s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/bin'
+[6.636s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[6.637s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/lib/python3.10/site-packages'
+[6.637s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/bin'
+[6.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[6.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[6.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.sh'
+[6.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.bash'
+[6.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[6.639s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[6.678s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[6.679s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros' for CMake module files
+[6.680s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros' for CMake config files
+[6.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[6.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[6.681s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[6.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[6.682s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/lib'
+[6.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[6.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[6.683s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[6.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[6.684s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/bin'
+[6.684s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[6.684s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/lib/python3.10/site-packages'
+[6.685s] Level 1:colcon.colcon_core.environment:checking '/home/nadav/ODrive_Controller/install/rplidar_ros/bin'
+[6.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[6.686s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[6.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.sh'
+[6.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.bash'
+[6.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/nadav/ODrive_Controller/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[6.687s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nadav/ODrive_Controller/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[6.688s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.688s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.688s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.688s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.710s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.710s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.710s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.721s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.722s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nadav/ODrive_Controller/install/local_setup.ps1'
+[6.723s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nadav/ODrive_Controller/install/_local_setup_util_ps1.py'
+[6.723s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nadav/ODrive_Controller/install/setup.ps1'
+[6.724s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nadav/ODrive_Controller/install/local_setup.sh'
+[6.725s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nadav/ODrive_Controller/install/_local_setup_util_sh.py'
+[6.725s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nadav/ODrive_Controller/install/setup.sh'
+[6.726s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nadav/ODrive_Controller/install/local_setup.bash'
+[6.726s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nadav/ODrive_Controller/install/setup.bash'
+[6.727s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nadav/ODrive_Controller/install/local_setup.zsh'
+[6.728s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nadav/ODrive_Controller/install/setup.zsh'
