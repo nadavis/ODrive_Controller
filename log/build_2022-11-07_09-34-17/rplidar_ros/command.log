@@ -1,6 +1,0 @@
-Invoking command in '/home/nadav/ODrive_Controller/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/rplidar -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rplidar_ros
-Invoked command in '/home/nadav/ODrive_Controller/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nadav/ODrive_Controller/src/rplidar -DCMAKE_INSTALL_PREFIX=/home/nadav/ODrive_Controller/install/rplidar_ros
-Invoking command in '/home/nadav/ODrive_Controller/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rplidar_ros -- -j20 -l20
-Invoked command in '/home/nadav/ODrive_Controller/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nadav/ODrive_Controller/build/rplidar_ros -- -j20 -l20
-Invoking command in '/home/nadav/ODrive_Controller/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rplidar_ros
-Invoked command in '/home/nadav/ODrive_Controller/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nadav/ODrive_Controller/build/rplidar_ros

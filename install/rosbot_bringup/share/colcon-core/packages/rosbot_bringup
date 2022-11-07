@@ -1,1 +1,0 @@
-joint_state_publisher:joy:launch_ros:nav2_bringup:nav2_common:navigation2:odrive_hardware_interface:robot_localization:robot_state_publisher:ros2_control:ros2_controllers:rosbot_description:rplidar_ros2:slam_toolbox:teleop_twist_joy:xacro
