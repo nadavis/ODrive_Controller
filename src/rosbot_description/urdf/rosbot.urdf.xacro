@@ -3,8 +3,8 @@
   xmlns:xacro="http://www.ros.org/wiki/xacro">
   <!-- TODO is use_sim argument used in any way? -->
   <!-- <xacro:arg name="use_sim" default="false" /> -->
-  <xacro:arg name="use_fake_hardware" default="true" />
-  <xacro:arg name="fake_sensor_commands" default="true" />
+  <xacro:arg name="use_fake_hardware" default="false" />
+  <xacro:arg name="fake_sensor_commands" default="false" />
   <xacro:arg name="prefix" default="" />
 
   <xacro:include filename="$(find rosbot_description)/urdf/rosbot_links.urdf.xacro" />
