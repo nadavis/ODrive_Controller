@@ -7,6 +7,7 @@
 
   <xacro:include filename="$(find diffbot_description)/gazebo/diffbot.materials.xacro" />
 
+  <xacro:include filename="$(find odrive_demo_description)/urdf/odrive.ros2_control.xacro" />
 
   <xacro:diffbot prefix="$(arg prefix)" />
 

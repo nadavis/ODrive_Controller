@@ -4,7 +4,8 @@ import time
 
 print("Finding an odrive...")
 odrv = odrive.find_any()
-
+time.sleep(3)
+print('voltage', odrv.vbus_voltage)
 axes = [odrv.axis0, odrv.axis1];
 # axes = [odrv.axis1];
 

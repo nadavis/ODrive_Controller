@@ -75,6 +75,12 @@ ros2 launch rosbot_bringup mini_rviz.launch.py
 ### ODrive setup
 [Link](https://github.com/Factor-Robotics/odrive_ros2_control/wiki/Getting_Started)
 ### ODrive calibration
+odrv0.erase_configuration()
+
+odrv0.save_configuration()
+odrv0.reboot()
+dump_errors(odrv0)
+
 - Be sure that your motor and encoder are properly configured and calibrated. Run the following command in order to calibrate the motors
 ```
 python3 src/odrive/two_motors_calibration.py
