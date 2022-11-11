@@ -29,6 +29,7 @@
         <param name="enable_watchdog">1</param>
         <param name="watchdog_timeout">0.5</param>
       </joint>
+
       <sensor name="axis0">
         <state_interface name="axis_error" />
         <state_interface name="motor_error" />

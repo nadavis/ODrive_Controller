@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711b7949-7134-44c5-b225-0025e923c395" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/odrive/odrive_setup_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_demo_description/urdf/odrive_diffbot.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/odrive/odrive_demo_description/urdf/odrive_diffbot.urdf.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/odrive/two_motors_calibration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/odrive/two_motors_calibration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_setup_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/odrive/two_motors_calibration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

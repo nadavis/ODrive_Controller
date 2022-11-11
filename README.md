@@ -8,7 +8,8 @@ sudo apt-get install libusb-1.0-0-dev ros-humble-ros2-control ros-humble-ros2-co
 - Download project: Clone git project from [github](https://github.com/nadavis/ODrive_Controller.git) to my project directory
 - cd ~/my project
 - Run in terminal ```colcon build```
-## Rviz Simulation
+## ROS2 Control Simulation
+The simulation is based on Rviz only, the pipline does not attached to ODrive
 ### DiffBot Demo
 [Link](https://github.com/ros-controls/ros2_control_demos)
 Differential Mobile Robot is a simple mobile base with differential drive.
@@ -60,8 +61,8 @@ Differential Mobile Robot is a simple mobile base with differential drive.
    You should now see an orange box circling in `RViz`.
    Also, you should see changing states in the terminal where launch file is started.
 
-### Rviz simulation with Joystick
-Control Odrive with XBox Joystick
+### ROS2 Control Simulation with Joystick
+Control Rviz deno with XBox Joystick
 - Assuming you hae installed ROS2 Desktop with dependency of joy_node and teleop_twist_joy
 - Motors devices 
 ```
@@ -71,21 +72,33 @@ ros2 launch rosbot_bringup mini_robot.launch.py
 ```
 ros2 launch rosbot_bringup mini_rviz.launch.py
 ```
-## Run ODrive basic demo 
+## ODrive demo 
 ### ODrive setup
-[Link](https://github.com/Factor-Robotics/odrive_ros2_control/wiki/Getting_Started)
-### ODrive calibration
-odrv0.erase_configuration()
+A description [Link](https://github.com/Factor-Robotics/odrive_ros2_control/wiki/Getting_Started)
 
+We are using firmware version 0.5.1, pip instalation:
+```
+sudo pip3 install odrive==0.5.1.post0
+```
+### ODrive calibration
+#### ODrive terminal basic commands
+```
+odrivetool
+odrv0.erase_configuration()
 odrv0.save_configuration()
 odrv0.reboot()
 dump_errors(odrv0)
-
-- Be sure that your motor and encoder are properly configured and calibrated. Run the following command in order to calibrate the motors
 ```
-python3 src/odrive/two_motors_calibration.py
+- Setup the motor and encoder parameters the file run calibrate as well
+```
+python3 src/odrive/odrive_calibration/two_motors_calibration.py
+```
+- Motor and encoder calibration and small test
+```
+python3 src/odrive/odrive_calibration/two_motors_calibration.py
 ```
 ### Test ODrive
+The following test is using ODrive hardware, so be sure you calibrated the motors and encoders
 - Run
 ```
 ros2 launch odrive_demo_bringup odrive_multi_interface.launch.py
@@ -99,3 +112,14 @@ ros2 topic pub -r 100 /joint0_velocity_controller/commands std_msgs/Float64Multi
 ```
 ros2 launch odrive_demo_bringup odrive_diffbot.launch.py
 ```
+Run the following command
+```
+ros2 topic pub --rate 30 /diffbot_base_controller/cmd_vel_unstamped geometry_msgs/msg/Twist "linear:
+ x: 0.2
+ y: 0.0
+ z: 0.0
+angular:
+ x: 0.0
+ y: 0.0
+ z: 1.0"
+ ```
