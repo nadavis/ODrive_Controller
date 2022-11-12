@@ -61,17 +61,6 @@ Differential Mobile Robot is a simple mobile base with differential drive.
    You should now see an orange box circling in `RViz`.
    Also, you should see changing states in the terminal where launch file is started.
 
-### ROS2 Control Simulation with Joystick
-Control Rviz deno with XBox Joystick
-- Assuming you hae installed ROS2 Desktop with dependency of joy_node and teleop_twist_joy
-- Motors devices 
-```
-ros2 launch rosbot_bringup mini_robot.launch.py
-```
-- Server 
-```
-ros2 launch rosbot_bringup mini_rviz.launch.py
-```
 ## ODrive demo 
 ### ODrive setup
 A description [Link](https://github.com/Factor-Robotics/odrive_ros2_control/wiki/Getting_Started)
@@ -115,6 +104,34 @@ ros2 launch odrive_demo_bringup odrive_diffbot.launch.py
 Run the following command
 ```
 ros2 topic pub --rate 30 /diffbot_base_controller/cmd_vel_unstamped geometry_msgs/msg/Twist "linear:
+ x: 0.2
+ y: 0.0
+ z: 0.0
+angular:
+ x: 0.0
+ y: 0.0
+ z: 1.0"
+ ```
+
+### ROS2 Control with Joystick
+Control Rviz and ODrive with XBox Joystick
+- Assuming you hae installed ROS2 Desktop with dependency of joy_node and teleop_twist_joy
+- In order ot Enable / Disable hardware or simulation change the values false (with ODrive hardware) / true (without ODrvie) 
+```
+<xacro:arg name="use_fake_hardware" default="false" />
+<xacro:arg name="fake_sensor_commands" default="false" />
+```
+- Motors devices 
+```
+ros2 launch rosbot_bringup mini_robot.launch.py
+```
+- Server 
+```
+ros2 launch rosbot_bringup mini_rviz.launch.py
+```
+Run the following command
+```
+ros2 topic pub --rate 30 /mini_robot_base_controller/cmd_vel_unstamped geometry_msgs/msg/Twist "linear:
  x: 0.2
  y: 0.0
  z: 0.0

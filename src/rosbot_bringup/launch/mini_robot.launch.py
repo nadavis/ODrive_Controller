@@ -11,7 +11,8 @@ def generate_launch_description():
     # paths
     robot_description_path = get_package_share_directory("rosbot_description")
     diff_drive_controller_config = join(robot_description_path, "config", "mini_robot_controllers.yaml")
-    rviz_config_file = join(robot_description_path, "config", "mini_robot.rviz" )
+    # diff_drive_controller_config = join(robot_description_path, "config", "diffbot_controllers.yaml")
+    # rviz_config_file = join(robot_description_path, "config", "mini_robot.rviz" )
     teleop_config = join(robot_description_path, "config", "teleop_bluetooth.yaml")
 
     # launch arguments
@@ -24,6 +25,7 @@ def generate_launch_description():
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
             PathJoinSubstitution(
+                # [robot_description_path, "urdf", "odrive_diffbot.urdf.xacro"]
                 [robot_description_path, "urdf", "rosbot.urdf.xacro"]
             ),
         ]
@@ -59,9 +61,9 @@ def generate_launch_description():
             executable="robot_state_publisher",
             output="both",
             parameters=[robot_description],
-            remappings=[
-                ("/diff_drive_controller/cmd_vel_unstamped", "/cmd_vel"),
-            ],
+            # remappings=[
+            #     ("/diff_drive_controller/cmd_vel_unstamped", "/cmd_vel"),
+            # ],
         ),
 
         # Node(
@@ -97,6 +99,7 @@ def generate_launch_description():
             package="controller_manager",
             executable="spawner",
             arguments=["mini_robot_base_controller", "-c", "/controller_manager"],
+            # arguments=["diffbot_base_controller", "-c", "/controller_manager"],
         ),
 
         # joystick, used by onboard teleop

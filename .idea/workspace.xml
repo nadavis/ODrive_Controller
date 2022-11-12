@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711b7949-7134-44c5-b225-0025e923c395" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_setup_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/odrive/two_motors_calibration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_setup_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_setup_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_calibration/two_motors_calibration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/odrive/odrive_calibration/two_motors_calibration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/mini_robot.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/mini_robot.launch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/mini_robot_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/config/mini_robot_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/teleop_bluetooth.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/config/teleop_bluetooth.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" afterDir="false" />
     </list>
@@ -32,15 +36,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/nadav/Desktop/rosbot-main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nadav/Desktop/rosbot-main&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.two_motors_calibration">
+}</component>
+  <component name="RunManager" selected="Python.odrive_test">
+    <configuration name="odrive_config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ODrive_Controller" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/odrive/odrive_calibration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="odrive_setup_config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ODrive_Controller" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,11 +74,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/odrive" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/odrive/odrive_calibration" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/odrive/odrive_setup_config.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_setup_config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="odrive_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ODrive_Controller" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/odrive/odrive_calibration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -70,11 +116,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/odrive" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/odrive/odrive_calibration" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/odrive/two_motors_calibration.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/odrive/odrive_calibration/two_motors_calibration.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,8 +131,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.odrive_test" />
         <item itemvalue="Python.two_motors_calibration" />
         <item itemvalue="Python.odrive_setup_config" />
+        <item itemvalue="Python.odrive_config" />
       </list>
     </recent_temporary>
   </component>
@@ -114,5 +162,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_setup_config.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

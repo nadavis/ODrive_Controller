@@ -6,7 +6,14 @@ import math
 
 print("finding an odrive...")
 my_drive = odrive.find_any()
-
+print("erase odrive configuration...")
+try:
+    my_drive.erase_configuration()
+except:
+    pass
+time.sleep(2)
+print("finding an odrive...")
+my_drive = odrive.find_any()
 print("setting odrive motor0...")
 # my_drive.axis0.motor.config.pre_calibrated = False
 my_drive.axis0.controller.config.vel_limit = 5
@@ -84,4 +91,14 @@ time.sleep(2)
 # my_drive.axis1.motor.config.pre_calibrated = True
 # time.sleep(2)
 print("Bus voltage is " + str(my_drive.vbus_voltage) + "V")
+
+# my_drive.axis1.encoder.config.pre_calibrated = True
+# my_drive.axis1.motor.config.pre_calibrated = True
+#
+# my_drive.axis0.encoder.config.pre_calibrated = True
+# my_drive.axis0.motor.config.pre_calibrated = True
+
+# my_drive.save_configuration()
+#
+
 

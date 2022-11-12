@@ -8,13 +8,11 @@ teleop_node_robot:
       x: 2.0
 
     axis_angular: # Left thumb stick horizontal
-      yaw: 2
+      yaw: 0
     scale_angular:
       yaw: 3.14
-    scale_angular_turbo:
-      x: 6.28
 
-    enable_button: 7 # left trigger
+    enable_button: 4 # left trigger
     enable_turbo_button: 5 # right trigger
 
 #Here is the button list mapping for XBox controller:
