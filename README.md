@@ -78,13 +78,17 @@ odrv0.save_configuration()
 odrv0.reboot()
 dump_errors(odrv0)
 ```
-- Setup the motor and encoder parameters the file run calibrate as well
+- Setup the motor and encoder parameters and run calibrate
 ```
-python3 src/odrive/odrive_calibration/two_motors_calibration.py
+python3 src/odrive/odrive_calibration/odrive_setup_config.py
 ```
 - Motor and encoder calibration and small test
 ```
 python3 src/odrive/odrive_calibration/two_motors_calibration.py
+```
+- Motor and encoder full calibration, a test and save offset
+```
+python3 src/odrive/odrive_calibration/odrive_config.py
 ```
 ### Test ODrive
 The following test is using ODrive hardware, so be sure you calibrated the motors and encoders
@@ -123,13 +127,13 @@ Control Rviz and ODrive with XBox Joystick
 ```
 - Motors devices 
 ```
-ros2 launch rosbot_bringup mini_robot.launch.py
+ros2 launch rosbot_bringup robot_xbox_control.launch.launch.py
 ```
 - Server 
 ```
-ros2 launch rosbot_bringup mini_rviz.launch.py
+ros2 launch rosbot_bringup rviz.launch.py
 ```
-Run the following command
+Publish topic via terminal run the following command
 ```
 ros2 topic pub --rate 30 /mini_robot_base_controller/cmd_vel_unstamped geometry_msgs/msg/Twist "linear:
  x: 0.2
@@ -140,3 +144,13 @@ angular:
  y: 0.0
  z: 1.0"
  ```
+
+## Teleop robot controller
+- `ros2 run mouse_teleop mouse_teleop`
+- `ros2 run mouse_teleop mouse_teleop --ros-args -r holonomic:=true`
+- `ros2 topic echo /mouse_vel`
+- `rqt_robot_steering`
+- Controlling via keyboard
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard cmd_vel:=/mini_robot_base_controller/cmd_vel_unstamped
+```

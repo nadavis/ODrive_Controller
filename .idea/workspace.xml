@@ -2,16 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711b7949-7134-44c5-b225-0025e923c395" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_setup_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_setup_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_calibration/two_motors_calibration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/odrive/odrive_calibration/two_motors_calibration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/mini_robot.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/mini_robot.launch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/mini_robot_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/config/mini_robot_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/gazebo.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/imu.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/localization.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/mini_robot.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/mini_rviz.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/navigation.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot.launch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/rviz.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/rviz.launch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/slam.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/view_robot.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/bno055.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/diff_drive_controller.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/diffbot_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/ekf.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/ekf2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/localization.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/mini_robot.rviz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/mini_robot_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/navigate_w_replanning_and_recovery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/navigation.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/slam_toolbox_lifelong.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/slam_toolbox_localization.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/slam_toolbox_mapping.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/teleop_bluetooth.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/config/teleop_bluetooth.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/teleop_usb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/map/office.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/map/office.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/map/office.posegraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/map/office.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/odrive.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/urdf/odrive.urdf.xacro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,15 +59,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nadav/Desktop/rosbot-main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/nadav/ODrive_Controller_test"
   }
-}</component>
-  <component name="RunManager" selected="Python.odrive_test">
+}]]></component>
+  <component name="RunManager" selected="Python.odrive_config">
     <configuration name="odrive_config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ODrive_Controller" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,10 +154,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.odrive_test" />
-        <item itemvalue="Python.two_motors_calibration" />
-        <item itemvalue="Python.odrive_setup_config" />
         <item itemvalue="Python.odrive_config" />
+        <item itemvalue="Python.odrive_test" />
+        <item itemvalue="Python.odrive_setup_config" />
+        <item itemvalue="Python.two_motors_calibration" />
       </list>
     </recent_temporary>
   </component>

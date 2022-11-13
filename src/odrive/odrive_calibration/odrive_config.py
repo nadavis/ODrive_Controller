@@ -1,11 +1,12 @@
 """
 These configurations is based on Austin Owens implementation:
 https://github.com/AustinOwens/robodog/blob/main/odrive/configs/odrive_hoverboard_config.py
-
 That was based on the hoverboard tutorial found on the Odrive Robotics website.
-
-@author: Jorge Lamperez
-@date: 04/02/2022
+AND
+These configurations is based on Jorge Lamperez implementation:
+https://github.com/jlamperez/karp/blob/main/karp_odrive/scripts/odrive_config.py
+@author: Nadav Israel
+@date: 1/11/2022
 """
 
 import sys
@@ -13,11 +14,9 @@ import time
 import odrive
 from odrive.enums import *
 
-class RBEMotorConfig:
-    """
-    Class for configuring an Odrive axis for a RBE-202024-003 motor.
-    Only works with one Odrive at a time.
-    """
+class MotorConfig:
+
+    MOTOR_KV = 500/24
 
     # Min/Max phase inductance of motor
     MIN_PHASE_INDUCTANCE = 0
@@ -30,82 +29,50 @@ class RBEMotorConfig:
     # Tolerance for encoder offset float
     ENCODER_OFFSET_FLOAT_TOLERANCE = 0.5
 
-    def __init__(self, axis_num: int):
-        """
-        Initalizes RBEotorConfig class by finding odrive and grabbing specified
-        axis object.
-
-        :param axis_num: Which channel/motor on the odrive your referring to.
-        :type axis_num: int (0 or 1)
-        """
-
+    def __init__(self, odrv, axis_num: int):
         self.axis_num = axis_num
-
-        # Connect to Odrive
-        print("Looking for ODrive...")
+        self.odrv = odrv
         self._find_odrive()
-        print("Found ODrive.")
-
+        # Connect to Odrive
     def _find_odrive(self):
         # connect to Odrive
-        self.odrv = odrive.find_any()
+        print("Looking for ODrive axis...")
         self.odrv_axis = getattr(self.odrv, "axis{}".format(self.axis_num))
-
-    def erase_config(self):
-        """ Erase pre-exsisting configuration """
-
-        print("Erasing pre-exsisting configuration...")
-        try:
-            self.odrv.erase_configuration()
-        except:
-            pass
-
+        print("Found ODrive axis.")
     def set_odrive_parameters(self):
-        self._find_odrive()
+        print("Set odrive configuration parameters.")
         """Saves odrive axis, motor, encoder and controller parameters"""
+        self.odrv_axis.motor.config.current_lim = 15
         self.odrv_axis.motor.config.pole_pairs = 15
         self.odrv_axis.motor.config.motor_type = MOTOR_TYPE_HIGH_CURRENT
-
         self.odrv_axis.motor.config.resistance_calib_max_voltage = 10
         self.odrv_axis.motor.config.requested_current_range      = 25
-        self.odrv_axis.motor.config.current_control_bandwidth    = 100
+        self.odrv_axis.motor.config.current_control_bandwidth    = 1000 #100
+        self.odrv_axis.motor.config.torque_constant = 8.27/self.MOTOR_KV
 
-        self.odrv_axis.motor.config.torque_constant = 24*8.27/500
-
-        # We are going to use RBE-102024-003 Optical encoder AEDR-8300.
-        self.odrv_axis.encoder.config.mode=ENCODER_MODE_INCREMENTAL
-        self.odrv_axis.encoder.config.cpr=16384
+        self.odrv_axis.encoder.config.mode = ENCODER_MODE_INCREMENTAL
+        self.odrv_axis.encoder.config.cpr = 16384
+        self.odrv_axis.encoder.config.calib_scan_distance = 150
 
         # Tuned values
-        self.odrv_axis.controller.config.pos_gain = 3
-        self.odrv_axis.controller.config.vel_gain = 1.3
-        self.odrv_axis.controller.config.vel_integrator_gain = 15
+        # self.odrv_axis.controller.config.pos_gain = 3
+        # self.odrv_axis.controller.config.vel_gain = 1.3
+        # self.odrv_axis.controller.config.vel_integrator_gain = 15
+        # self.odrv_axis.controller.config.pos_gain = 1
+        # self.odrv_axis.controller.config.vel_gain = 0.02 * self.odrv_axis.motor.config.torque_constant * self.odrv_axis.encoder.config.cpr
+        # self.odrv_axis.controller.config.vel_integrator_gain = 0.1 * self.odrv_axis.motor.config.torque_constant * self.odrv_axis.encoder.config.cpr
+        # self.odrv_axis.controller.config.vel_limit = 10
         self.odrv_axis.controller.config.vel_limit = 10
 
         # Set in position control mode so we can control the position of the
         # wheel
         self.odrv_axis.controller.config.control_mode = CONTROL_MODE_POSITION_CONTROL
-
-        # In the next step we are going to start powering the motor and so we
-        # want to make sure that some of the above settings that require a
-        # reboot are applied first.
-        print("Saving manual configuration and rebooting...")
-        self.odrv.save_configuration()
-        print("Manual configuration saved.")
-        try:
-            self.odrv.reboot()
-        except:
-            pass
-
     def motor_calibration(self):
-        self._find_odrive()
-        print("Calibrating Odrive for RBE-202024-003 motor (you should hear a "
-        "beep)...")
-
+        print("Calibrating Odrive motor")
         self.odrv_axis.requested_state = AXIS_STATE_MOTOR_CALIBRATION
 
         # Wait for calibration to take place
-        time.sleep(10)
+        time.sleep(5)
 
         if self.odrv_axis.motor.error != 0:
             print("Error: Odrive reported an error of {} while in the state "
@@ -143,20 +110,13 @@ class RBEMotorConfig:
 
         # If all looks good, then lets tell ODrive that saving this calibration
         # to persistent memory is OK
-        self.odrv_axis.motor.config.pre_calibrated = True
+        # self.odrv_axis.motor.config.pre_calibrated = True
 
-        print("Saving motor calibration configuration and rebooting...")
-        self.odrv.save_configuration()
-        print("Motor calibration configuration saved.")
-        try:
-            self.odrv.reboot()
-        except:
-            pass
+
 
     def encoder_calibration(self):
-        self._find_odrive()
         # Check the alignment between the motor and the encoder sensor.
-        print("Calibrating Odrive for encoder...")
+        print("Calibrating Odrive encoder...")
         self.odrv_axis.requested_state = AXIS_STATE_ENCODER_OFFSET_CALIBRATION
 
         # Wait for calibration to take place
@@ -172,10 +132,10 @@ class RBEMotorConfig:
 
         # If offset_float isn't 0.5 within some tolerance, or its not 1.5 within
         # some tolerance, raise an error
-        if not ((self.odrv_axis.encoder.config.offset_float > 0.5 - self.ENCODER_OFFSET_FLOAT_TOLERANCE and \
-        self.odrv_axis.encoder.config.offset_float < 0.5 + self.ENCODER_OFFSET_FLOAT_TOLERANCE) or \
-        (self.odrv_axis.encoder.config.offset_float > 1.5 - self.ENCODER_OFFSET_FLOAT_TOLERANCE and \
-        self.odrv_axis.encoder.config.offset_float < 1.5 + self.ENCODER_OFFSET_FLOAT_TOLERANCE)):
+        if not ((abs(self.odrv_axis.encoder.config.offset_float) > 0.5 - self.ENCODER_OFFSET_FLOAT_TOLERANCE and \
+        abs(self.odrv_axis.encoder.config.offset_float) < 0.5 + self.ENCODER_OFFSET_FLOAT_TOLERANCE) or \
+        (abs(self.odrv_axis.encoder.config.offset_float) > 1.5 - self.ENCODER_OFFSET_FLOAT_TOLERANCE and \
+        abs(self.odrv_axis.encoder.config.offset_float) < 1.5 + self.ENCODER_OFFSET_FLOAT_TOLERANCE)):
             print("Error: After odrive encoder calibration, the 'offset_float' "
             "is at {}, which is outside of the expected range. 'offset_float' "
             "should be close to 0.5 or 1.5 with a tolerance of {}. Either "
@@ -188,15 +148,17 @@ class RBEMotorConfig:
 
         # If all looks good, then lets tell ODrive that saving this calibration
         # to persistent memory is OK
+        # self.odrv_axis.encoder.config.pre_calibrated = True
+    def set_pre_calibrated(self):
+        self.odrv_axis.motor.config.pre_calibrated = True
         self.odrv_axis.encoder.config.pre_calibrated = True
 
+
     def configure(self):
-        """
-        Configures the odrive device for RBE-1020-24-003 motor.
-        """
         self.set_odrive_parameters()
         # input("Make sure the motor is free to move, then press enter...")
         self.motor_calibration()
+        self.encoder_calibration()
         print("Odrive configuration finished.")
 
     def full_calibration(self):
@@ -220,7 +182,6 @@ class RBEMotorConfig:
         """
         Puts the motor in closed loop control.
         """
-
         self.odrv_axis.requested_state = AXIS_STATE_CLOSED_LOOP_CONTROL
 
     def move_input_pos(self, angle):
@@ -232,32 +193,88 @@ class RBEMotorConfig:
         """
 
         self.odrv_axis.controller.input_pos = angle/360.0
+class ODriveConfig:
+    def __init__(self):
+        # Connect to Odrive
+        self._find_odrive()
 
-if __name__ == "__main__":
-    rbe_motor_axis0_config = RBEMotorConfig(axis_num = 0)
-    rbe_motor_axi1_config = RBEMotorConfig(axis_num = 1)
-    rbe_motor_axis0_config.erase_config()
+    def _find_odrive(self):
+        # connect to Odrive
+        print("Looking for ODrive...")
+        self.odrv = odrive.find_any()
+        self.motor_axis0_config = MotorConfig(self.odrv, axis_num=0)
+        self.motor_axis1_config = MotorConfig(self.odrv, axis_num=1)
+        time.sleep(3)
+        print("Found ODrive.")
 
-    rbe_motor_axis0_config.configure()
-    rbe_motor_axi1_config.configure()
+    def reboot(self):
+        print("Reboot odrive.")
+        try:
+            self.odrv.reboot()
+        except:
+            pass
 
-    rbe_motor_axis0_config.encoder_calibration()
-    rbe_motor_axi1_config.encoder_calibration()
+        time.sleep(3)
+        self._find_odrive()
 
-    print("CONDUCTING MOTOR TEST")
-    print("Placing motors in close loop control. If you move motor, motor will "
-          "resist you.")
-    rbe_motor_axis0_config.mode_close_loop_control()
-    rbe_motor_axi1_config.mode_close_loop_control()
+    def save_config(self):
+        print("Saving manual configuration and rebooting...")
+        try:
+            self.odrv.save_configuration()
+        except:
+            pass
+        time.sleep(3)
+        print("Manual configuration saved.")
 
-    # Go from 0 to 360 degrees in increments of 30 degrees
-    for angle in range(0, 390, 30):
-        print("Setting motor to {} degrees.".format(angle))
-        rbe_motor_axis0_config.move_input_pos(angle)
-        rbe_motor_axi1_config.move_input_pos(-angle)
+    def erase_config(self):
+        print("Erasing configuration.")
+        try:
+            self.odrv.erase_configuration()
+        except:
+            pass
+
+        time.sleep(3)
+        print("Erased configuration.")
+    def configure(self):
+        print("Starting Odrive configuration.")
+        self.motor_axis0_config.configure()
+        self.motor_axis1_config.configure()
+        print("Odrive configuration finished.")
+        self.save_config()
+        # self.reboot()
+        self._find_odrive()
+    def set_odrive_close_loop(self):
+        self.motor_axis0_config.mode_close_loop_control()
+        self.motor_axis1_config.mode_close_loop_control()
+    def odrive_test1(self):
+        # Go from 0 to 360 degrees in increments of 30 degrees
+        for angle in range(0, 360, 60):
+            print("Setting motor to {} degrees.".format(angle))
+            self.motor_axis0_config.move_input_pos(angle)
+            time.sleep(2)
+            self.motor_axis1_config.move_input_pos(angle)
+            time.sleep(2)
+
+    def odrive_test2(self):
+        self.motor_axis0_config.move_input_pos(360)
+        time.sleep(2)
+        self.motor_axis1_config.move_input_pos(360)
         time.sleep(2)
 
-    print("Placing motors in idle. If you move motor, motor will "
-          "move freely")
-    rbe_motor_axis0_config.mode_idle()
-    rbe_motor_axi1_config.mode_idle()
+    def set_pre_calibrated(self):
+        self.motor_axis0_config.set_pre_calibrated()
+        self.motor_axis1_config.set_pre_calibrated()
+
+if __name__ == "__main__":
+    odrv = ODriveConfig()
+    # odrv.configure()
+    # odrv.set_odrive_close_loop()
+    # odrv.set_pre_calibrated()
+    # odrv.odrive_test1()
+    # odrv.reboot()
+    odrv.odrive_test2()
+
+    # print("Placing motors in idle. If you move motor, motor will "
+    #       "move freely")
+    # motor_axis0_config.mode_idle()
+    # motor_axis1_config.mode_idle()
