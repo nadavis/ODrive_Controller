@@ -38,6 +38,7 @@ class MotorConfig:
         # connect to Odrive
         print("Looking for ODrive axis...")
         self.odrv_axis = getattr(self.odrv, "axis{}".format(self.axis_num))
+        time.sleep(2)
         print("Found ODrive axis.")
     def set_odrive_parameters(self):
         print("Set odrive configuration parameters.")
@@ -150,9 +151,14 @@ class MotorConfig:
         # to persistent memory is OK
         # self.odrv_axis.encoder.config.pre_calibrated = True
     def set_pre_calibrated(self):
-        self.odrv_axis.motor.config.pre_calibrated = True
-        self.odrv_axis.encoder.config.pre_calibrated = True
 
+        self.odrv_axis.encoder.config.use_index = True
+        self.odrv_axis.requested_state = AXIS_STATE_ENCODER_INDEX_SEARCH
+        self.odrv_axis.encoder.config.pre_calibrated = True
+        self.odrv_axis.config.startup_encoder_index_search = True
+        # self.odrv_axis.config.startup_encoder_offset_calibration = True
+        self.odrv_axis.config.startup_closed_loop_control = True
+        self.odrv_axis.motor.config.pre_calibrated = True
 
     def configure(self):
         self.set_odrive_parameters()
@@ -218,7 +224,7 @@ class ODriveConfig:
         self._find_odrive()
 
     def save_config(self):
-        print("Saving manual configuration and rebooting...")
+        print("Saving manual configuration...")
         try:
             self.odrv.save_configuration()
         except:
@@ -240,9 +246,9 @@ class ODriveConfig:
         self.motor_axis0_config.configure()
         self.motor_axis1_config.configure()
         print("Odrive configuration finished.")
-        self.save_config()
+        # self.save_config()
         # self.reboot()
-        self._find_odrive()
+        # self._find_odrive()
     def set_odrive_close_loop(self):
         self.motor_axis0_config.mode_close_loop_control()
         self.motor_axis1_config.mode_close_loop_control()
@@ -256,22 +262,34 @@ class ODriveConfig:
             time.sleep(2)
 
     def odrive_test2(self):
+        print("Test 2 - spinning once")
         self.motor_axis0_config.move_input_pos(360)
+        time.sleep(2)
+        self.motor_axis0_config.move_input_pos(0)
         time.sleep(2)
         self.motor_axis1_config.move_input_pos(360)
         time.sleep(2)
+        self.motor_axis1_config.move_input_pos(0)
+        time.sleep(2)
 
     def set_pre_calibrated(self):
+        print("Starting set pre calibration.")
         self.motor_axis0_config.set_pre_calibrated()
         self.motor_axis1_config.set_pre_calibrated()
+        print("Pre calibration. finished.")
+        self.save_config()
+        # self.reboot()
+        self._find_odrive()
 
 if __name__ == "__main__":
     odrv = ODriveConfig()
     # odrv.configure()
-    # odrv.set_odrive_close_loop()
     # odrv.set_pre_calibrated()
-    # odrv.odrive_test1()
+    # odrv.set_odrive_close_loop()
+    # # odrv.odrive_test1()
     # odrv.reboot()
+    #
+    # time.sleep(5)
     odrv.odrive_test2()
 
     # print("Placing motors in idle. If you move motor, motor will "
