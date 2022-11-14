@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="711b7949-7134-44c5-b225-0025e923c395" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

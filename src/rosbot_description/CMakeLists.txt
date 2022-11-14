@@ -4,7 +4,7 @@ project(rosbot_description)
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY config rviz gazebo ros2_control urdf world map meshes
+  DIRECTORY config rviz gazebo ros2_control urdf world meshes
   DESTINATION share/${PROJECT_NAME}
 )
 
