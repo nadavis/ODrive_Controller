@@ -43,12 +43,13 @@ class MotorConfig:
     def set_odrive_parameters(self):
         print("Set odrive configuration parameters.")
         """Saves odrive axis, motor, encoder and controller parameters"""
-        self.odrv_axis.motor.config.current_lim = 15
+        self.odrv_axis.motor.config.current_lim = 30
+        self.odrv_axis.motor.config.calibration_current = 10
         self.odrv_axis.motor.config.pole_pairs = 15
         self.odrv_axis.motor.config.motor_type = MOTOR_TYPE_HIGH_CURRENT
         self.odrv_axis.motor.config.resistance_calib_max_voltage = 10
         self.odrv_axis.motor.config.requested_current_range      = 25
-        self.odrv_axis.motor.config.current_control_bandwidth    = 1000 #100
+        self.odrv_axis.motor.config.current_control_bandwidth    = 100 #100
         self.odrv_axis.motor.config.torque_constant = 8.27/self.MOTOR_KV
 
         self.odrv_axis.encoder.config.mode = ENCODER_MODE_INCREMENTAL
@@ -56,10 +57,10 @@ class MotorConfig:
         self.odrv_axis.encoder.config.calib_scan_distance = 150
 
         # Tuned values
-        # self.odrv_axis.controller.config.pos_gain = 3
-        # self.odrv_axis.controller.config.vel_gain = 1.3
-        # self.odrv_axis.controller.config.vel_integrator_gain = 15
-        # self.odrv_axis.controller.config.pos_gain = 1
+        # self.odrv_axis.controller.config.pos_gain = 25
+        # self.odrv_axis.controller.config.vel_gain = 20
+        # self.odrv_axis.controller.config.vel_integrator_gain = 100
+
         # self.odrv_axis.controller.config.vel_gain = 0.02 * self.odrv_axis.motor.config.torque_constant * self.odrv_axis.encoder.config.cpr
         # self.odrv_axis.controller.config.vel_integrator_gain = 0.1 * self.odrv_axis.motor.config.torque_constant * self.odrv_axis.encoder.config.cpr
         # self.odrv_axis.controller.config.vel_limit = 10
@@ -153,10 +154,10 @@ class MotorConfig:
     def set_pre_calibrated(self):
 
         self.odrv_axis.encoder.config.use_index = True
-        self.odrv_axis.requested_state = AXIS_STATE_ENCODER_INDEX_SEARCH
         self.odrv_axis.encoder.config.pre_calibrated = True
+        self.odrv_axis.requested_state = AXIS_STATE_ENCODER_INDEX_SEARCH
         self.odrv_axis.config.startup_encoder_index_search = True
-        # self.odrv_axis.config.startup_encoder_offset_calibration = True
+        self.odrv_axis.config.startup_encoder_offset_calibration = True
         self.odrv_axis.config.startup_closed_loop_control = True
         self.odrv_axis.motor.config.pre_calibrated = True
 
@@ -239,7 +240,8 @@ class ODriveConfig:
         except:
             pass
 
-        time.sleep(3)
+        time.sleep(5)
+        self._find_odrive()
         print("Erased configuration.")
     def configure(self):
         print("Starting Odrive configuration.")
@@ -281,15 +283,19 @@ class ODriveConfig:
         # self.reboot()
         self._find_odrive()
 
+    def set_full_calibrated(self):
+        self.erase_config()
+        self.configure()
+        self.set_pre_calibrated()
+
+
 if __name__ == "__main__":
     odrv = ODriveConfig()
-    # odrv.configure()
-    # odrv.set_pre_calibrated()
-    # odrv.set_odrive_close_loop()
-    # # odrv.odrive_test1()
-    # odrv.reboot()
-    #
-    # time.sleep(5)
+    odrv.set_full_calibrated()
+
+    odrv.reboot()
+    time.sleep(30)
+    # drv.odrive_test1()
     odrv.odrive_test2()
 
     # print("Placing motors in idle. If you move motor, motor will "

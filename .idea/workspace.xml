@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="711b7949-7134-44c5-b225-0025e923c395" name="Changes" comment="" />
+    <list default="true" id="711b7949-7134-44c5-b225-0025e923c395" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/robot_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/config/robot_controllers.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +34,7 @@
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/nadav/ODrive_Controller_test"
+    "last_opened_file_path": "/home/nadav/ODrive_Controller"
   }
 }]]></component>
   <component name="RunManager" selected="Python.odrive_config">
