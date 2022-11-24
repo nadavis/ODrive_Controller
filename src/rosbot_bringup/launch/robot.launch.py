@@ -30,7 +30,7 @@ def generate_launch_description():
 
     # build launch description
     return LaunchDescription([
-        IncludeLaunchDescription(PythonLaunchDescriptionSource([rplidar_path, '/rplidar.launch.py'])),
+        IncludeLaunchDescription(PythonLaunchDescriptionSource([rplidar_path, 'launch/rplidar.launch.py'])),
 
         # ros2 control used by differential drive
         Node(
