@@ -30,7 +30,22 @@ def generate_launch_description():
 
     # build launch description
     return LaunchDescription([
-        IncludeLaunchDescription(PythonLaunchDescriptionSource([rplidar_path, '/launch/rplidar.launch.py'])),
+        # IncludeLaunchDescription(PythonLaunchDescriptionSource([rplidar_path, '/launch/rplidar.launch.py'])),
+
+        Node(
+            name='rplidar_composition',
+            package='rplidar_ros',
+            executable='rplidar_composition',
+            output='screen',
+            parameters=[{
+                'serial_port': '/dev/ttyUSB0',
+                'serial_baudrate': 115200,  # A1 / A2
+                # 'serial_baudrate': 256000, # A3
+                'frame_id': 'base_laser',
+                'inverted': False,
+                'angle_compensate': True,
+            }],
+        ),
 
         # ros2 control used by differential drive
         Node(

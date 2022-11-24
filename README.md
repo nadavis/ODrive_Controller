@@ -100,6 +100,24 @@ ros2 launch odrive_demo_bringup odrive_multi_interface.launch.py
 ```
 ros2 topic pub -r 100 /joint0_velocity_controller/commands std_msgs/Float64MultiArray "data: [1]"
 ```
+## Teleop robot controller
+- `ros2 run mouse_teleop mouse_teleop`
+- `ros2 run mouse_teleop mouse_teleop --ros-args -r holonomic:=true`
+- `ros2 topic echo /mouse_vel`
+- `rqt_robot_steering`
+- Controlling via keyboard
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard cmd_vel:=/mini_robot_base_controller/cmd_vel_unstamped
+```
+## RP Lidar
+Run 
+```
+ros2 launch rplidar_ros rplidar.launch.py
+```
+View on RViz 
+```
+ros2 launch rplidar_ros rviz_rplidar.launch.py
+```
 ## ODrive DiffBot 
 [Link](https://github.com/Factor-Robotics/odrive_ros2_control/wiki/DiffBot_HIL_Demo)
 ```
@@ -116,10 +134,29 @@ angular:
  y: 0.0
  z: 1.0"
  ```
+### ROS2 launch Robot
+- Assuming you have installed ROS2 Desktop
+- In order ot Enable / Disable hardware or simulation change the values false (with ODrive hardware) / true (without ODrvie) 
+```
+<xacro:arg name="use_fake_hardware" default="false" />
+<xacro:arg name="fake_sensor_commands" default="false" />
+```
+- Motors devices 
+```
+ros2 launch rosbot_bringup robot.launch.py
+```
+- Server 
+```
+ros2 launch rosbot_bringup rviz.launch.py
+```
+- Keyboard
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard cmd_vel:=/mini_robot_base_controller/cmd_vel_unstamped
+```
 
 ### ROS2 Control with Joystick
 Control Rviz and ODrive with XBox Joystick
-- Assuming you hae installed ROS2 Desktop with dependency of joy_node and teleop_twist_joy
+- Assuming you have installed ROS2 Desktop with dependency of joy_node and teleop_twist_joy
 - In order ot Enable / Disable hardware or simulation change the values false (with ODrive hardware) / true (without ODrvie) 
 ```
 <xacro:arg name="use_fake_hardware" default="false" />
@@ -144,23 +181,3 @@ angular:
  y: 0.0
  z: 1.0"
  ```
-
-## Teleop robot controller
-- `ros2 run mouse_teleop mouse_teleop`
-- `ros2 run mouse_teleop mouse_teleop --ros-args -r holonomic:=true`
-- `ros2 topic echo /mouse_vel`
-- `rqt_robot_steering`
-- Controlling via keyboard
-```
-ros2 run teleop_twist_keyboard teleop_twist_keyboard cmd_vel:=/mini_robot_base_controller/cmd_vel_unstamped
-```
-
-## RP Lidar
-Run 
-```
-ros2 launch rplidar_ros rplidar.launch.py
-```
-View on RViz 
-```
-ros2 launch rplidar_ros rviz_rplidar.launch.py
-```

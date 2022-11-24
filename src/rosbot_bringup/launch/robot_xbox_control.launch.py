@@ -12,28 +12,16 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 def generate_launch_description():
     # paths
     robot_description_path = get_package_share_directory("rosbot_description")
-    diff_drive_controller_config = join(robot_description_path, "config", "robot_controllers.yaml")
+    rosbot_bringup_path = get_package_share_directory("rosbot_bringup")
     teleop_config = join(robot_description_path, "config", "teleop_bluetooth.yaml")
 
     # launch arguments
     launch_teleop = LaunchConfiguration("launch_teleop")
     joy_dev = LaunchConfiguration("joy_dev")
 
-    # get robot description from urdf xacro file
-    robot_description_content = Command(
-        [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
-            " ",
-            PathJoinSubstitution(
-                # [robot_description_path, "urdf", "odrive_diffbot.urdf.xacro"]
-                [robot_description_path, "urdf", "rosbot.urdf.xacro"]
-            ),
-        ]
-    )
-    robot_description = {"robot_description": robot_description_content}
-
     # build launch description
     return LaunchDescription([
+        IncludeLaunchDescription(PythonLaunchDescriptionSource([rosbot_bringup_path, '/launch/robot.launch.py'])),
 
         DeclareLaunchArgument(
             "launch_teleop",
@@ -45,38 +33,6 @@ def generate_launch_description():
             "joy_dev",
             default_value="/dev/input/js0",
             description="Joystick device to use",
-        ),
-
-        # ros2 control used by differential drive
-        Node(
-            package="controller_manager",
-            executable="ros2_control_node",
-            parameters=[robot_description, diff_drive_controller_config],
-            output="both",
-        ),
-
-        # robot state publisher
-        Node(
-            package="robot_state_publisher",
-            executable="robot_state_publisher",
-            output="both",
-            parameters=[robot_description],
-            # remappings=[
-            #     ("/diff_drive_controller/cmd_vel_unstamped", "/cmd_vel"),
-            # ],
-        ),
-
-        Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
-        ),
-
-        Node(
-            package="controller_manager",
-            executable="spawner",
-            arguments=["mini_robot_base_controller", "-c", "/controller_manager"],
-            # arguments=["diffbot_base_controller", "-c", "/controller_manager"],
         ),
 
         # joystick, used by onboard teleop
