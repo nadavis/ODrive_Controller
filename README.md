@@ -162,5 +162,5 @@ ros2 launch rplidar_ros rplidar.launch.py
 ```
 View on RViz 
 ```
-roslaunch rplidar_ros view_rplidar.launch
+ros2 launch rplidar_ros rviz_rplidar.launch.py
 ```

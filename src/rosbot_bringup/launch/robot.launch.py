@@ -6,10 +6,13 @@ from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 from os.path import join
 from launch_ros.substitutions import FindPackageShare
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
     # paths
     robot_description_path = get_package_share_directory("rosbot_description")
+    rplidar_path = get_package_share_directory("rplidar_ros")
     diff_drive_controller_config = join(robot_description_path, "config", "robot_controllers.yaml")
 
     # get robot description from urdf xacro file
@@ -27,6 +30,8 @@ def generate_launch_description():
 
     # build launch description
     return LaunchDescription([
+        IncludeLaunchDescription(PythonLaunchDescriptionSource([rplidar_path, '/rplidar.launch.py'])),
+
         # ros2 control used by differential drive
         Node(
             package="controller_manager",
