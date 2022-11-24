@@ -12,7 +12,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 def generate_launch_description():
     # paths
     robot_description_path = get_package_share_directory("rosbot_description")
-    rplidar_path = get_package_share_directory("rplidar_ros")
+    # rplidar_path = get_package_share_directory("rplidar_ros")
     diff_drive_controller_config = join(robot_description_path, "config", "robot_controllers.yaml")
 
     # get robot description from urdf xacro file

@@ -11,6 +11,7 @@ def generate_launch_description():
     # paths
     robot_description_path = get_package_share_directory("rosbot_description")
     rviz_config_file = join(robot_description_path, "config", "robot.rviz" )
+    # rviz_config_file = join(robot_description_path, "rviz", "rosbot.rviz")
 
     # build launch description
     return LaunchDescription([
