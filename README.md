@@ -127,7 +127,7 @@ Control Rviz and ODrive with XBox Joystick
 ```
 - Motors devices 
 ```
-ros2 launch rosbot_bringup robot_xbox_control.launch.launch.py
+ros2 launch rosbot_bringup robot_xbox_control.launch.py
 ```
 - Server 
 ```
@@ -153,4 +153,14 @@ angular:
 - Controlling via keyboard
 ```
 ros2 run teleop_twist_keyboard teleop_twist_keyboard cmd_vel:=/mini_robot_base_controller/cmd_vel_unstamped
+```
+
+## RP Lidar
+Run 
+```
+ros2 launch rplidar_ros rplidar.launch.py
+```
+View on RViz 
+```
+roslaunch rplidar_ros view_rplidar.launch
 ```
