@@ -14,22 +14,36 @@ def generate_launch_description():
     robot_description_path = get_package_share_directory("rosbot_description")
     # rplidar_path = get_package_share_directory("rplidar_ros")
     diff_drive_controller_config = join(robot_description_path, "config", "robot_controllers.yaml")
+    xacro_file = join(robot_description_path, "urdf", "rosbot.urdf.xacro")
+
+
+    use_gazebo = LaunchConfiguration('use_gazebo')
+    robot_description_content = Command(['xacro ', xacro_file, ' use_gazebo:=', use_gazebo])
+    # Create a robot_state_publisher node
+    # robot_description = {'robot_description': robot_description_content, 'use_sim_time': use_sim_time}
+    robot_description = {'robot_description': robot_description_content}
+
 
     # get robot description from urdf xacro file
-    robot_description_content = Command(
-        [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
-            " ",
-            PathJoinSubstitution(
-                # [robot_description_path, "urdf", "odrive_diffbot.urdf.xacro"]
-                [robot_description_path, "urdf", "rosbot.urdf.xacro"]
-            ),
-        ]
-    )
-    robot_description = {"robot_description": robot_description_content}
+    # robot_description_content = Command(
+    #     [
+    #         PathJoinSubstitution([FindExecutable(name="xacro")]),
+    #         " ",
+    #         PathJoinSubstitution(
+    #             # [robot_description_path, "urdf", "odrive_diffbot.urdf.xacro"]
+    #             [robot_description_path, "urdf", "rosbot.urdf.xacro"]
+    #         ),
+    #     ]
+    # )
+    # robot_description = {"robot_description": robot_description_content}
 
     # build launch description
     return LaunchDescription([
+        DeclareLaunchArgument(
+            'use_gazebo',
+            default_value='false',
+            description='Use sim time if true'),
+
         # IncludeLaunchDescription(PythonLaunchDescriptionSource([rplidar_path, '/launch/rplidar.launch.py'])),
 
         Node(
@@ -64,14 +78,14 @@ def generate_launch_description():
         ),
 
         Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+            package="controller_manager",
+            executable="spawner",
+            arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
         ),
 
         Node(
             package="controller_manager",
             executable="spawner",
             arguments=["mini_robot_base_controller", "-c", "/controller_manager"],
-        ),
+        )
     ])

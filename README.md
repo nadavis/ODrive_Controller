@@ -134,12 +134,20 @@ angular:
  y: 0.0
  z: 1.0"
  ```
+## ROS2 Robot
 ### ROS2 launch Robot
 - Assuming you have installed ROS2 Desktop
 - In order ot Enable / Disable hardware or simulation change the values false (with ODrive hardware) / true (without ODrvie) 
 ```
 <xacro:arg name="use_fake_hardware" default="false" />
 <xacro:arg name="fake_sensor_commands" default="false" />
+<xacro:arg name="use_gazebo" default="false" />
+```
+Change controller
+```
+robot_controllers.yaml
+use_sim_time: true #for gazebo simulation
+use_sim_time: false #for real robot
 ```
 - Motors devices 
 ```
@@ -148,6 +156,7 @@ ros2 launch rosbot_bringup robot.launch.py
 - Server 
 ```
 ros2 launch rosbot_bringup rviz.launch.py
+ros2 launch rosbot_bringup gazebo.launch.py
 ```
 - Keyboard
 ```
@@ -181,3 +190,11 @@ angular:
  y: 0.0
  z: 1.0"
  ```
+### ROS2 command
+```
+ros2 run tf2_tools view_frames
+```
+### Gazebo ROS2 control demo
+```
+ros2 launch gazebo_ros2_control_demos diff_drive.launch.py
+```

@@ -45,7 +45,7 @@ def generate_launch_description():
                 "deadzone": 0.1,
                 "autorepeat_rate": 20.0,
             }],
-            # remap joy topic to allow to co-exist with another joystick
+            # remap joy topic to allow to co-exist wcmd_velith another joystick
             remappings={
                 ("/joy", "/joy_robot"),
                 ("/cmd_vel", "/mini_robot_base_controller/cmd_vel_unstamped")

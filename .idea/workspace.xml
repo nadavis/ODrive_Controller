@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="711b7949-7134-44c5-b225-0025e923c395" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/gazebo.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/gazebo.launch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot.launch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot_xbox_control.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot_xbox_control.launch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/robot.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/config/robot.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/robot_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/config/robot_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/gazebo/rosbot.gazebo.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/gazebo/rosbot.gazebo.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/odrive.ros2_control.xacro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/odrive.urdf.xacro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/odrive_diffbot.urdf.xacro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot_links.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot_links.urdf.xacro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +48,7 @@
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/nadav/ODrive_Controller"
+    "last_opened_file_path": "/home/nadav/Desktop/Ref/articubot_one"
   }
 }]]></component>
   <component name="RunManager" selected="Python.odrive_config">
@@ -142,6 +157,7 @@
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.rviz" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.xacro" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +178,11 @@
           <url>file://$PROJECT_DIR$/src/odrive/odrive_calibration/odrive_setup_config.py</url>
           <line>16</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/launch/diff_drive.launch.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
