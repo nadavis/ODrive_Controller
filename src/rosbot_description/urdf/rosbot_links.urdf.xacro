@@ -20,7 +20,7 @@
     <!-- rear wheel properties -->
     <xacro:property name="rear_wheel_mass" value="0.5" />
     <xacro:property name="rear_wheel_width" value="0.05" />
-    <xacro:property name="rear_wheel_radius" value="0.0975" />
+    <xacro:property name="rear_wheel_radius" value="0.085" />
     <xacro:property name="rear_wheel_origin_x" value="-0.1" />
     <xacro:property name="rear_wheel_distance" value="0.241" />
 

@@ -9,15 +9,10 @@
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/gazebo.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/gazebo.launch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot.launch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot_xbox_control.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot_xbox_control.launch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/robot.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/config/robot.rviz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/config/robot_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/config/robot_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/slam.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/slam.launch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rosbot_description/gazebo/rosbot.gazebo.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/gazebo/rosbot.gazebo.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/ros2_control/rosbot_system.ros2_control.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/odrive.ros2_control.xacro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/odrive.urdf.xacro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/odrive_diffbot.urdf.xacro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot.urdf.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosbot_description/rviz/rosbot.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/rviz/rosbot.rviz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot_links.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot_links.urdf.xacro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +43,7 @@
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/nadav/Desktop/Ref/articubot_one"
+    "last_opened_file_path": "/home/nadav/MRP"
   }
 }]]></component>
   <component name="RunManager" selected="Python.odrive_config">

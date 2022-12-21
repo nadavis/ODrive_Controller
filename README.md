@@ -8,6 +8,11 @@ sudo apt-get install libusb-1.0-0-dev ros-humble-ros2-control ros-humble-ros2-co
 - Download project: Clone git project from [github](https://github.com/nadavis/ODrive_Controller.git) to my project directory
 - cd ~/my project
 - Run in terminal ```colcon build```
+## Common ROS2 command
+```
+ros2 run tf2_tools view_frames
+```
+
 ## ROS2 Control Simulation
 The simulation is based on Rviz only, the pipline does not attached to ODrive
 ### DiffBot Demo
@@ -60,7 +65,10 @@ Differential Mobile Robot is a simple mobile base with differential drive.
     ```
    You should now see an orange box circling in `RViz`.
    Also, you should see changing states in the terminal where launch file is started.
-
+## Gazebo ROS2 control demo
+```
+ros2 launch gazebo_ros2_control_demos diff_drive.launch.py
+```
 ## ODrive demo 
 ### ODrive setup
 A description [Link](https://github.com/Factor-Robotics/odrive_ros2_control/wiki/Getting_Started)
@@ -100,6 +108,22 @@ ros2 launch odrive_demo_bringup odrive_multi_interface.launch.py
 ```
 ros2 topic pub -r 100 /joint0_velocity_controller/commands std_msgs/Float64MultiArray "data: [1]"
 ```
+## ODrive DiffBot 
+[Link](https://github.com/Factor-Robotics/odrive_ros2_control/wiki/DiffBot_HIL_Demo)
+```
+ros2 launch odrive_demo_bringup odrive_diffbot.launch.py
+```
+Run the following command
+```
+ros2 topic pub --rate 30 /diffbot_base_controller/cmd_vel_unstamped geometry_msgs/msg/Twist "linear:
+ x: 0.2
+ y: 0.0
+ z: 0.0
+angular:
+ x: 0.0
+ y: 0.0
+ z: 1.0"
+ ```
 ## Teleop robot controller
 - `ros2 run mouse_teleop mouse_teleop`
 - `ros2 run mouse_teleop mouse_teleop --ros-args -r holonomic:=true`
@@ -118,24 +142,9 @@ View on RViz
 ```
 ros2 launch rplidar_ros rviz_rplidar.launch.py
 ```
-## ODrive DiffBot 
-[Link](https://github.com/Factor-Robotics/odrive_ros2_control/wiki/DiffBot_HIL_Demo)
-```
-ros2 launch odrive_demo_bringup odrive_diffbot.launch.py
-```
-Run the following command
-```
-ros2 topic pub --rate 30 /diffbot_base_controller/cmd_vel_unstamped geometry_msgs/msg/Twist "linear:
- x: 0.2
- y: 0.0
- z: 0.0
-angular:
- x: 0.0
- y: 0.0
- z: 1.0"
- ```
-## ROS2 Robot
-### ROS2 launch Robot
+
+# ROS2 Robot Project
+## ROS2 launch Robot
 - Assuming you have installed ROS2 Desktop
 - In order ot Enable / Disable hardware or simulation change the values false (with ODrive hardware) / true (without ODrvie) 
 ```
@@ -149,29 +158,13 @@ robot_controllers.yaml
 use_sim_time: true #for gazebo simulation
 use_sim_time: false #for real robot
 ```
-- Motors devices 
+- Launch a robot devices 
 ```
 ros2 launch rosbot_bringup robot.launch.py
 ```
-- Server 
-```
-ros2 launch rosbot_bringup rviz.launch.py
-ros2 launch rosbot_bringup gazebo.launch.py
-```
-- Keyboard
-```
-ros2 run teleop_twist_keyboard teleop_twist_keyboard cmd_vel:=/mini_robot_base_controller/cmd_vel_unstamped
-```
-
-### ROS2 Control with Joystick
-Control Rviz and ODrive with XBox Joystick
-- Assuming you have installed ROS2 Desktop with dependency of joy_node and teleop_twist_joy
+- Or control launch a robot with XBox joystick. 
+- Assuming you have installed ROS2 Desktop with dependency of joy_node and teleop_twist_joy. 
 - In order ot Enable / Disable hardware or simulation change the values false (with ODrive hardware) / true (without ODrvie) 
-```
-<xacro:arg name="use_fake_hardware" default="false" />
-<xacro:arg name="fake_sensor_commands" default="false" />
-```
-- Motors devices 
 ```
 ros2 launch rosbot_bringup robot_xbox_control.launch.py
 ```
@@ -179,7 +172,15 @@ ros2 launch rosbot_bringup robot_xbox_control.launch.py
 ```
 ros2 launch rosbot_bringup rviz.launch.py
 ```
-Publish topic via terminal run the following command
+- Gazebo simulation (includes Rviz)
+```
+ros2 launch rosbot_bringup gazebo.launch.py
+```
+- Control with a Keyboard
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard cmd_vel:=/mini_robot_base_controller/cmd_vel_unstamped
+```
+- Publish topic via terminal run the following command
 ```
 ros2 topic pub --rate 30 /mini_robot_base_controller/cmd_vel_unstamped geometry_msgs/msg/Twist "linear:
  x: 0.2
@@ -190,11 +191,11 @@ angular:
  y: 0.0
  z: 1.0"
  ```
-### ROS2 command
+- SLAM
 ```
-ros2 run tf2_tools view_frames
+ros2 launch rosbot_bringup slam.launch.py 
 ```
-### Gazebo ROS2 control demo
+- Robot localization
 ```
-ros2 launch gazebo_ros2_control_demos diff_drive.launch.py
+ros2 launch rosbot_bringup localization.launch.py 
 ```

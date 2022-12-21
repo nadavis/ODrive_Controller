@@ -24,8 +24,7 @@ def generate_launch_description():
     launch_dir = join(rosbot_bringup_path, 'launch')
 
     declared_arguments = []
-
-    # should we use simulation time
+    use_sim_time = LaunchConfiguration('use_sim_time')
     declared_arguments.append(
         DeclareLaunchArgument(
             "use_sim_time",
@@ -39,7 +38,8 @@ def generate_launch_description():
         get_package_share_directory('rosbot_description'),
         'world',
         #'office.sdf'
-        'simple.sdf'
+        # 'simple.sdf'
+        'obstacles.world'
     )
     declared_arguments.append(
         DeclareLaunchArgument(
@@ -102,12 +102,14 @@ def generate_launch_description():
 
     # setup list of nodes to launch
     nodes = [
-        IncludeLaunchDescription(PythonLaunchDescriptionSource([launch_dir, '/robot.launch.py']), launch_arguments={'use_gazebo': 'true'}.items()),
-        IncludeLaunchDescription(PythonLaunchDescriptionSource([launch_dir, '/rviz.launch.py'])),
+        IncludeLaunchDescription(PythonLaunchDescriptionSource([launch_dir, '/robot.launch.py']), launch_arguments={'use_gazebo': 'true', ' use_sim_time': 'true'}.items()),
 
         start_gazebo_server_cmd,
         start_gazebo_client_cmd,
         spawn_entity_node,
+
+        IncludeLaunchDescription(PythonLaunchDescriptionSource([launch_dir, '/rviz.launch.py'])),
+
     ]
 
     return LaunchDescription(declared_arguments + nodes)
