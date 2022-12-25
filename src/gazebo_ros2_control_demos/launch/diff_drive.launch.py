@@ -68,16 +68,6 @@ def generate_launch_description():
         output='screen'
     )
 
-    rviz = Node(
-        package="rviz2",
-        executable="rviz2",
-        arguments=[
-            "-d",
-            os.path.join(gazebo_ros2_control_demos_path, "config/config_diff.rviz"),
-        ],
-        output="screen",
-    )
-
     return LaunchDescription([
         RegisterEventHandler(
             event_handler=OnProcessExit(
@@ -92,7 +82,6 @@ def generate_launch_description():
             )
         ),
         gazebo,
-        rviz,
         node_robot_state_publisher,
         spawn_entity,
     ])

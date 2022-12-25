@@ -7,13 +7,55 @@
     <list default="true" id="711b7949-7134-44c5-b225-0025e923c395" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/gazebo.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/gazebo.launch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/robot.launch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_bringup/launch/slam.launch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_bringup/launch/slam.launch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/gazebo/rosbot.gazebo.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/gazebo/rosbot.gazebo.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/rviz/rosbot.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/rviz/rosbot.rviz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot_links.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosbot_description/urdf/rosbot_links.urdf.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/.github/workflows/ci.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/Docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/Docker/entrypoint.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/CHANGELOG.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/gazebo_hardware_plugins.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_ros2_control_plugin.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system_interface.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/src/gazebo_ros2_control_plugin.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control/src/gazebo_system.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/CHANGELOG.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/config/cartpole_controller.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/config/cartpole_controller_effort.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/config/cartpole_controller_velocity.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/config/config.rviz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/config/config_diff.rviz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/config/diff_drive_controller.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/config/gripper_controller.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/config/tricycle_drive_controller.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/examples/example_diff_drive.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/examples/example_effort.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/examples/example_gripper.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/examples/example_position.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/examples/example_tricycle_drive.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/examples/example_velocity.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/launch/cart_example_effort.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/launch/cart_example_position.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/launch/cart_example_velocity.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/launch/diff_drive.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/launch/gripper_mimic_joint_example.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/launch/tricycle_drive.launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/urdf/test_cart_effort.xacro.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/urdf/test_cart_position.xacro.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/urdf/test_cart_velocity.xacro.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/urdf/test_diff_drive.xacro.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/urdf/test_gripper_mimic_joint.xacro.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/gazebo_ros2_control_demos/urdf/test_tricycle_drive.xacro.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/img/cart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/img/gazebo_ros2_control_diff_drive.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/img/gazebo_ros2_control_position.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/img/gripper.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_ros2_control/img/moveit2.gif" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +80,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/nadav/MRP"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nadav/MRP&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.odrive_config">
     <configuration name="odrive_config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ODrive_Controller" />

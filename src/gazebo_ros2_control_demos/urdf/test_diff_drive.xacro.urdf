@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <robot name="diff_drive" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <!-- Base Link -->
-  <link name="base_link" />
-
   <link name="chassis">
     <collision>
       <origin xyz="-0.151427 -0 0.5" rpy="0 0 0"/>
@@ -31,11 +29,6 @@
         izz="0.481014"/>
     </inertial>
   </link>
-  <joint name="chassis_joint" type="fixed">
-    <origin xyz="0.8 0 0.5" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="chassis" />
-  </joint>
 
   <joint name="left_wheel_joint" type="continuous">
     <origin xyz="0.554283 0.625029 0.3" rpy="-1.5707 0 0"/>
@@ -167,4 +160,5 @@
       <parameters>$(find gazebo_ros2_control_demos)/config/diff_drive_controller.yaml</parameters>
     </plugin>
   </gazebo>
+
 </robot>

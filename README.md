@@ -4,6 +4,8 @@
 - Install ROS2 dependency, run the following command on terminal in order to install control, controller, xacro and libusb
 ```
 sudo apt-get install libusb-1.0-0-dev ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-xacro
+sudo apt install ros-humble-gazebo-ros2-control
+sudo apt install ros-humble-rplidar-ros
 ```
 - Download project: Clone git project from [github](https://github.com/nadavis/ODrive_Controller.git) to my project directory
 - cd ~/my project
